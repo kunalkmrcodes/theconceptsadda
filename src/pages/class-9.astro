@@ -717,5 +717,102 @@ import "../styles/global.css";
 				padding: 35px 28px;
 			}
 		}
+
+		@media (max-width: 700px) {
+			.class9-container,
+			.class9-nav-container {
+				width: min(100% - 28px, 1180px);
+			}
+
+			.class9-hero {
+				padding: 50px 0 55px;
+			}
+
+			.class9-hero h1 {
+				font-size: clamp(36px, 9vw, 48px);
+				letter-spacing: -1.5px;
+			}
+
+			.class9-hero-content > p {
+				font-size: 15px;
+			}
+
+			.hero-stats {
+				gap: 20px;
+			}
+
+			.hero-stats strong {
+				font-size: 22px;
+			}
+
+			.math-visual {
+				border-radius: 18px;
+			}
+
+			.visual-content {
+				min-height: 240px;
+				padding: 25px 14px;
+			}
+
+			.equation {
+				font-size: clamp(18px, 5.5vw, 26px);
+				gap: 6px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.equation-line {
+				width: 140px;
+				margin: 18px 0 12px;
+			}
+
+			.visual-answer {
+				font-size: 13px;
+			}
+
+			.chapters-section {
+				padding: 60px 0 70px;
+			}
+
+			.section-intro h2 {
+				font-size: clamp(30px, 8vw, 38px);
+				letter-spacing: -1.5px;
+			}
+
+			.chapter-card {
+				grid-template-columns: 42px minmax(0, 1fr) 20px;
+				gap: 12px;
+				padding: 20px;
+			}
+
+			.chapter-number {
+				width: 42px;
+				height: 42px;
+				font-size: 15px;
+				border-radius: 12px;
+			}
+
+			.chapter-info h3 {
+				font-size: 17px;
+			}
+
+			.chapter-info p {
+				font-size: 13px;
+				line-height: 1.5;
+			}
+
+			.class9-cta {
+				padding-bottom: 70px;
+			}
+
+			.cta-box {
+				padding: 30px 22px;
+				border-radius: 20px;
+			}
+
+			.cta-box h2 {
+				font-size: 26px;
+			}
+		}
 	</style>
 </Layout>
