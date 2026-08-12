@@ -1,0 +1,715 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout
+	title="Volume of Combination of Solids | Class 10 | The Concepts Adda"
+	description="Learn how to calculate capacity and volume of combined 3D shapes (Gulab Jamun, Iron Pole, Cone + Cylinder) for Class 10 NCERT Mathematics."
+>
+	<main class="lesson-page">
+		<div class="lesson-container">
+			<a href="/surface-areas-and-volumes" class="back-link">
+				<span class="back-arrow">←</span>
+				<span>Back to Surface Areas & Volumes</span>
+			</a>
+
+			<!-- LESSON HEADER -->
+			<section class="lesson-header">
+				<div class="lesson-number">02</div>
+				<div class="lesson-header-copy">
+					<div class="lesson-label">LESSON 02 · CLASS 10 MATHEMATICS (NCERT)</div>
+					<h1>Volume of <span>Combination of Solids</span></h1>
+					<p>
+						Master calculating the volume and capacity of combined 3D shapes by taking the direct sum of component volumes with clear 3D SVG diagrams.
+					</p>
+				</div>
+			</section>
+
+			<!-- CONTENT LAYOUT -->
+			<section class="content-layout">
+				<article class="lesson-content">
+
+					<!-- 01 · VOLUME RECAP -->
+					<div class="topic-label">01 · RECAP FORMULAS</div>
+					<h2>Volumes of Basic 3D Solids</h2>
+
+					<div class="summary-list">
+						<div class="summary-item">
+							<span>Cylinder</span>
+							<div>
+								<p><strong>Cylinder Volume</strong></p>
+								<span style="color:#64748b; font-size:14px;">Volume = <strong>πr²h</strong>.</span>
+							</div>
+						</div>
+						<div class="summary-item">
+							<span>Cone</span>
+							<div>
+								<p><strong>Cone Volume</strong></p>
+								<span style="color:#64748b; font-size:14px;">Volume = <strong>(1/3) πr²h</strong> (exactly 1/3rd of a cylinder of same radius and height!).</span>
+							</div>
+						</div>
+						<div class="summary-item">
+							<span>Sphere / Hemisphere</span>
+							<div>
+								<p><strong>Sphere & Hemisphere Volume</strong></p>
+								<span style="color:#64748b; font-size:14px;">Sphere Volume = <strong>(4/3) πr³</strong>. Hemisphere Volume = <strong>(2/3) πr³</strong>.</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 02 · COMBINED VOLUME RULE -->
+					<div class="topic-label second-label">02 · COMBINED VOLUME RULE</div>
+					<h2>Volume Additivity Principle</h2>
+
+					<div class="idea-box">
+						<div class="idea-icon">💡</div>
+						<div class="idea-content">
+							<strong>DIRECT SUM RULE FOR VOLUMES</strong>
+							<p>
+								Unlike surface areas (where touching internal faces are excluded), total volume is simply the sum of individual volumes!
+								<br/>
+								<strong>Total Volume of Combined Solid = Volume(Solid 1) + Volume(Solid 2) + ...</strong>
+							</p>
+						</div>
+					</div>
+
+					<!-- SVG Diagram for Gulab Jamun (Cylinder + 2 Hemispheres) -->
+					<div class="example-card">
+						<div class="example-header">
+							<span class="example-badge">COMBINED SOLID DIAGRAM</span>
+							<h3>Gulab Jamun (Cylinder with two Hemispherical Ends)</h3>
+						</div>
+						<div class="example-solution">
+							<div style="margin:15px 0; text-align:center;">
+								<svg width="360" height="180" viewBox="0 0 360 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#f8fafc; border-radius:18px; border:1px solid #cbd5e1; box-shadow:0 6px 20px rgba(0,0,0,0.03);">
+									<!-- Cylinder Body (100 to 260, y: 50 to 130) -->
+									<rect x="100" y="50" width="160" height="80" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+
+									<!-- Left Hemisphere (Center 100, 90, radius 40) -->
+									<path d="M 100,50 A 40 40 0 0 0 100,130 Z" fill="#fde68a" stroke="#d97706" stroke-width="2.5"/>
+
+									<!-- Right Hemisphere (Center 260, 90, radius 40) -->
+									<path d="M 260,50 A 40 40 0 0 1 260,130 Z" fill="#fde68a" stroke="#d97706" stroke-width="2.5"/>
+
+									<!-- Interface Ellipses -->
+									<ellipse cx="100" cy="90" rx="10" ry="40" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3,3"/>
+									<ellipse cx="260" cy="90" rx="10" ry="40" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+									<!-- Total Length & Dimensions -->
+									<line x1="60" y1="155" x2="300" y2="155" stroke="#0f172a" stroke-width="1.5"/>
+									<text x="145" y="172" fill="#0f172a" font-size="13" font-weight="900">Total Length L = 5 cm</text>
+
+									<!-- Labels -->
+									<text x="50" y="95" fill="#d97706" font-size="11" font-weight="800">Hemisphere</text>
+									<text x="150" y="95" fill="#d97706" font-size="13" font-weight="900">Cylinder (h = L - 2r)</text>
+									<text x="270" y="95" fill="#d97706" font-size="11" font-weight="800">Hemisphere</text>
+								</svg>
+							</div>
+
+							<div class="calc-box">
+								Total Volume = <strong>Volume of Cylinder + 2 × (Volume of Hemisphere)</strong><br/>
+								Total Volume = <strong>πr²h + 2 × [(2/3) πr³] = πr² [h + (4/3)r]</strong>
+							</div>
+						</div>
+					</div>
+
+					<!-- 03 · SOLVED NCERT EXAMPLE -->
+					<div class="topic-label second-label">03 · SOLVED NCERT EXAMPLE</div>
+					<h2>Step-by-Step Problem Solving</h2>
+
+					<div class="example-card">
+						<div class="example-header">
+							<span class="example-badge">EXAMPLE 1</span>
+							<h3>A gulab jamun contains sugar syrup up to about 30% of its volume. Find how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends with length 5 cm and diameter 2.8 cm.</h3>
+						</div>
+						<div class="example-solution">
+							<p>Diameter = 2.8 cm ⟹ Radius <em>r = 1.4 cm</em>.</p>
+							<p>Height of cylinder <em>h = Total Length - 2r = 5 - 2(1.4) = 5 - 2.8 = 2.2 cm</em>.</p>
+
+							<p style="margin-top:10px;"><strong>Step 1: Volume of 1 Gulab Jamun</strong>:</p>
+							<div class="calc-box">
+								V₁ = πr²h + (4/3)πr³ = πr² [h + (4/3)r]<br/>
+								V₁ = (22/7) × 1.4 × 1.4 × [2.2 + (4/3)(1.4)]<br/>
+								V₁ = 6.16 × [2.2 + 1.867] = 6.16 × 4.067 = <strong>25.05 cm³</strong>
+							</div>
+
+							<p style="margin-top:14px;"><strong>Step 2: Total Volume of 45 Gulab Jamuns</strong>:</p>
+							<div class="calc-box">
+								V_total = 45 × 25.05 = <strong>1127.25 cm³</strong>
+							</div>
+
+							<p style="margin-top:14px;"><strong>Step 3: Volume of Sugar Syrup (30%)</strong>:</p>
+							<div class="calc-box">
+								Syrup Volume = 30% × 1127.25 = (30 / 100) × 1127.25 = <strong>338.18 cm³ ≈ 338 cm³</strong>
+							</div>
+						</div>
+					</div>
+
+					<!-- 04 · QUICK SUMMARY -->
+					<div class="topic-label second-label">04 · QUICK SUMMARY</div>
+					<h2>Key Takeaways</h2>
+
+					<div class="summary-list">
+						<div class="summary-item">
+							<span>01</span>
+							<p>Volume of combined solid = <strong>Direct sum of individual volumes</strong>.</p>
+						</div>
+						<div class="summary-item">
+							<span>02</span>
+							<p>Cylinder height in capsule = <strong>Total Length - 2 × radius</strong>.</p>
+						</div>
+						<div class="summary-item">
+							<span>03</span>
+							<p>Cone volume is exactly <strong>(1/3)rd</strong> of a cylinder of same radius and height.</p>
+						</div>
+					</div>
+
+					<!-- LESSON NAVIGATION -->
+					<div class="lesson-navigation">
+						<a href="/surface-areas-and-volumes/surface-area-of-combined-solids" class="previous-lesson">
+							<span>←</span>
+							<div>
+								<small>PREVIOUS LESSON</small>
+								<strong>Combined Surface Area</strong>
+							</div>
+						</a>
+
+						<a href="/surface-areas-and-volumes/applications-and-practice" class="next-lesson">
+							<div>
+								<small>NEXT LESSON</small>
+								<strong>Applications & Practice</strong>
+							</div>
+							<span>→</span>
+						</a>
+					</div>
+				</article>
+
+				<!-- SIDEBAR -->
+				<aside class="lesson-sidebar">
+					<div class="sidebar-card">
+						<div class="sidebar-title">SURFACE AREAS & VOLUMES</div>
+						<div class="progress-text">Lesson 02 of 04</div>
+						<div class="progress-bar">
+							<div style="width: 50%;"></div>
+						</div>
+
+						<div class="sidebar-lessons">
+							<a href="/surface-areas-and-volumes/surface-area-of-combined-solids" class="sidebar-lesson">
+								<span>01</span>
+								<div>
+									<strong>Combined Surface Area</strong>
+									<small>Exposed CSA sum rule</small>
+								</div>
+							</a>
+
+							<a href="/surface-areas-and-volumes/volume-of-combined-solids" class="sidebar-lesson active">
+								<span>02</span>
+								<div>
+									<strong>Combined Volume</strong>
+									<small>Sum of volumes rule</small>
+								</div>
+							</a>
+
+							<a href="/surface-areas-and-volumes/applications-and-practice" class="sidebar-lesson">
+								<span>03</span>
+								<div>
+									<strong>Applications & Practice</strong>
+									<small>NCERT word problems</small>
+								</div>
+							</a>
+
+							<a href="/surface-areas-and-volumes/pyqs" class="sidebar-lesson">
+								<span>04</span>
+								<div>
+									<strong>Previous Year PYQs</strong>
+									<small>CBSE 2020-2024 practice set</small>
+								</div>
+							</a>
+						</div>
+					</div>
+				</aside>
+			</section>
+		</div>
+	</main>
+
+	<style>
+		.lesson-page {
+			min-height: 100vh;
+			background: linear-gradient(180deg, #f8fbff 0%, #ffffff 35%, #f7f9fc 100%);
+			color: #14213d;
+			padding: 45px 0 100px;
+		}
+
+		.lesson-container {
+			width: min(1120px, calc(100% - 40px));
+			margin: 0 auto;
+		}
+
+		.back-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 7px;
+			color: #667085;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 35px;
+			transition: color 0.2s ease, transform 0.2s ease;
+		}
+
+		.back-link:hover {
+			color: #2563eb;
+			transform: translateX(-3px);
+		}
+
+		.lesson-header {
+			display: grid;
+			grid-template-columns: 80px minmax(0, 1fr);
+			gap: 25px;
+			align-items: center;
+			padding: 40px;
+			border: 1px solid #e1e7f0;
+			border-radius: 24px;
+			background: rgba(255, 255, 255, 0.92);
+			box-shadow: 0 18px 45px rgba(20, 33, 61, 0.055);
+			margin-bottom: 45px;
+		}
+
+		.lesson-number {
+			width: 80px;
+			height: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 20px;
+			background: #eef4ff;
+			color: #2563eb;
+			font-size: 23px;
+			font-weight: 900;
+		}
+
+		.lesson-label {
+			color: #2563eb;
+			font-size: 11px;
+			font-weight: 850;
+			letter-spacing: 1.7px;
+			margin-bottom: 10px;
+		}
+
+		.lesson-header h1 {
+			margin: 0;
+			font-size: clamp(34px, 4.5vw, 54px);
+			line-height: 1.05;
+			letter-spacing: -2px;
+			font-weight: 900;
+			color: #14213d;
+		}
+
+		.lesson-header h1 span {
+			color: #2563eb;
+		}
+
+		.lesson-header p {
+			margin: 15px 0 0;
+			max-width: 720px;
+			color: #687180;
+			font-size: 17px;
+			line-height: 1.65;
+		}
+
+		.content-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) 300px;
+			gap: 45px;
+			align-items: start;
+		}
+
+		.lesson-content {
+			min-width: 0;
+			padding: 5px 0 0;
+		}
+
+		.topic-label {
+			color: #2563eb;
+			font-size: 11px;
+			font-weight: 900;
+			letter-spacing: 1.8px;
+			margin-bottom: 14px;
+		}
+
+		.second-label {
+			margin-top: 60px;
+		}
+
+		.lesson-content h2 {
+			margin: 0;
+			color: #14213d;
+			font-size: clamp(28px, 3.5vw, 38px);
+			line-height: 1.1;
+			letter-spacing: -1.5px;
+			font-weight: 900;
+		}
+
+		.lesson-content > p {
+			max-width: 780px;
+			margin: 18px 0 0;
+			color: #687180;
+			font-size: 16.5px;
+			line-height: 1.75;
+		}
+
+		.formula-box {
+			margin-top: 22px;
+			padding: 24px 28px;
+			border-radius: 20px;
+			background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+			color: #ffffff;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		.formula-box strong {
+			font-size: 18px;
+			color: #38bdf8;
+			font-weight: 700;
+			line-height: 1.5;
+		}
+
+		.idea-box {
+			display: flex;
+			align-items: flex-start;
+			gap: 16px;
+			margin-top: 26px;
+			padding: 22px 24px;
+			border-radius: 18px;
+			background: #eff6ff;
+			border: 1px solid #dbeafe;
+			color: #1e40af;
+		}
+
+		.idea-icon {
+			width: 32px;
+			height: 32px;
+			border-radius: 10px;
+			background: #2563eb;
+			color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 900;
+			font-size: 15px;
+			flex-shrink: 0;
+		}
+
+		.idea-content strong {
+			display: block;
+			font-size: 16px;
+			font-weight: 800;
+			margin-bottom: 4px;
+		}
+
+		.idea-content p {
+			margin: 0;
+			font-size: 15px;
+			line-height: 1.6;
+		}
+
+		.example-card {
+			margin-top: 25px;
+			border-radius: 20px;
+			border: 1px solid #e1e7f0;
+			background: #ffffff;
+			box-shadow: 0 8px 25px rgba(20, 33, 61, 0.035);
+			overflow: hidden;
+		}
+
+		.example-header {
+			padding: 20px 24px;
+			background: #f8fafc;
+			border-bottom: 1px solid #edf2f7;
+		}
+
+		.example-badge {
+			display: inline-block;
+			padding: 4px 12px;
+			border-radius: 6px;
+			background: #2563eb;
+			color: #ffffff;
+			font-size: 11px;
+			font-weight: 900;
+			letter-spacing: 1px;
+			margin-bottom: 8px;
+		}
+
+		.example-header h3 {
+			margin: 0;
+			font-size: 18px;
+			font-weight: 800;
+			color: #14213d;
+		}
+
+		.example-solution {
+			padding: 24px;
+			color: #475569;
+			font-size: 15px;
+			line-height: 1.7;
+		}
+
+		.calc-box {
+			margin-top: 10px;
+			padding: 14px 18px;
+			border-radius: 12px;
+			background: #0f172a;
+			color: #38bdf8;
+			font-weight: 700;
+			font-size: 15px;
+			font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+		}
+
+		.summary-list {
+			display: grid;
+			gap: 16px;
+			margin-top: 26px;
+		}
+
+		.summary-item {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			padding: 20px 24px;
+			border-radius: 16px;
+			background: #ffffff;
+			border: 1px solid #e1e7f0;
+			box-shadow: 0 4px 15px rgba(20, 33, 61, 0.03);
+		}
+
+		.summary-item span {
+			padding: 8px 14px;
+			border-radius: 10px;
+			background: #eef4ff;
+			color: #2563eb;
+			font-weight: 900;
+			font-size: 13px;
+			flex-shrink: 0;
+		}
+
+		.summary-item p {
+			margin: 0;
+			color: #334155;
+			font-size: 15.5px;
+			line-height: 1.5;
+			font-weight: 600;
+		}
+
+		.lesson-navigation {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 20px;
+			margin-top: 60px;
+			padding-top: 40px;
+			border-top: 1px solid #e2e8f0;
+		}
+
+		.previous-lesson,
+		.next-lesson {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			padding: 18px 24px;
+			border: 1px solid #e1e7f0;
+			border-radius: 16px;
+			background: #ffffff;
+			text-decoration: none;
+			color: #14213d;
+			transition: all 0.2s ease;
+		}
+
+		.next-lesson {
+			margin-left: auto;
+			text-align: right;
+			justify-content: flex-end;
+		}
+
+		.previous-lesson:hover,
+		.next-lesson:hover {
+			border-color: #2563eb;
+			box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+			transform: translateY(-2px);
+		}
+
+		.previous-lesson div,
+		.next-lesson div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.previous-lesson small,
+		.next-lesson small {
+			display: block;
+			color: #64748b;
+			font-size: 11px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin-bottom: 4px;
+		}
+
+		.previous-lesson strong,
+		.next-lesson strong {
+			display: block;
+			font-size: 15px;
+			font-weight: 600;
+			color: #0f172a;
+		}
+
+		.previous-lesson span,
+		.next-lesson span {
+			font-size: 20px;
+			color: #2563eb;
+			font-weight: 800;
+		}
+
+		.lesson-sidebar {
+			position: sticky;
+			top: 30px;
+		}
+
+		.sidebar-card {
+			padding: 28px;
+			border-radius: 24px;
+			border: 1px solid #e1e7f0;
+			background: #ffffff;
+			box-shadow: 0 10px 30px rgba(20, 33, 61, 0.04);
+		}
+
+		.sidebar-title {
+			color: #2563eb;
+			font-size: 11px;
+			font-weight: 900;
+			letter-spacing: 1.5px;
+			margin-bottom: 8px;
+		}
+
+		.progress-text {
+			color: #64748b;
+			font-size: 13px;
+			font-weight: 700;
+			margin-bottom: 12px;
+		}
+
+		.progress-bar {
+			height: 6px;
+			border-radius: 10px;
+			background: #e2e8f0;
+			overflow: hidden;
+			margin-bottom: 24px;
+		}
+
+		.progress-bar div {
+			height: 100%;
+			background: #2563eb;
+			border-radius: 10px;
+		}
+
+		.sidebar-lessons {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		.sidebar-lesson {
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			padding: 12px;
+			border-radius: 12px;
+			text-decoration: none;
+			color: #334155;
+			transition: background 0.15s ease;
+		}
+
+		.sidebar-lesson:hover {
+			background: #f8fafc;
+		}
+
+		.sidebar-lesson.active {
+			background: #eef4ff;
+		}
+
+		.sidebar-lesson > span {
+			width: 24px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+			border-radius: 6px;
+			background: #f1f5f9;
+			color: #64748b;
+			font-size: 11px;
+			font-weight: 700;
+		}
+
+		.sidebar-lesson.active > span {
+			background: #dbeafe;
+			color: #2563eb;
+		}
+
+		.sidebar-lesson div {
+			min-width: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.sidebar-lesson strong {
+			display: block;
+			font-size: 13px;
+			font-weight: 600;
+			color: #1e293b;
+			line-height: 1.3;
+		}
+
+		.sidebar-lesson.active strong {
+			color: #1d4ed8;
+		}
+
+		.sidebar-lesson small {
+			display: block;
+			font-size: 11px;
+			color: #64748b;
+			margin-top: 3px;
+			line-height: 1.3;
+		}
+
+		.sidebar-lesson.active small {
+			color: #3b82f6;
+		}
+
+		@media (max-width: 900px) {
+			.content-layout {
+				grid-template-columns: 1fr;
+			}
+
+			.lesson-header {
+				grid-template-columns: 1fr;
+				padding: 28px;
+			}
+
+			.lesson-number {
+				width: 60px;
+				height: 60px;
+				font-size: 18px;
+			}
+
+			.lesson-navigation {
+				flex-direction: column;
+			}
+
+			.next-lesson {
+				width: 100%;
+			}
+		}
+	</style>
+</Layout>
