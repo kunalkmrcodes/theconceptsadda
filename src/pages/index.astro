@@ -1406,6 +1406,9 @@ import "../styles/global.css";
 
 		.logo-ring {
 			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 
 			width: 245px;
 			height: 245px;
@@ -1415,6 +1418,7 @@ import "../styles/global.css";
 				rgba(244, 196, 48, 0.55);
 
 			border-radius: 50%;
+			pointer-events: none;
 		}
 
 
@@ -2037,8 +2041,8 @@ import "../styles/global.css";
 
 
 			.logo-ring {
-				width: 195px;
-				height: 195px;
+				width: 210px;
+				height: 210px;
 			}
 
 		}
@@ -2189,7 +2193,9 @@ import "../styles/global.css";
 
 
 			.about-logo-wrap {
-				justify-content: flex-start;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
 
 				width: 160px;
 				height: 160px;
@@ -2197,20 +2203,20 @@ import "../styles/global.css";
 
 
 			.about-logo {
-				width: 150px;
-				height: 150px;
-			}
-
-
-			.about-logo img {
 				width: 140px;
 				height: 140px;
 			}
 
 
+			.about-logo img {
+				width: 130px;
+				height: 130px;
+			}
+
+
 			.logo-ring {
-				width: 165px;
-				height: 165px;
+				width: 160px;
+				height: 160px;
 			}
 
 
