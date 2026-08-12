@@ -523,7 +523,7 @@ import "../styles/global.css";
 		.chapter-grid {
 			display: grid;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
-			gap: 24px;
+			gap: 20px;
 		}
 
 		.chapter-card {
@@ -531,21 +531,80 @@ import "../styles/global.css";
 			grid-template-columns: 50px minmax(0, 1fr) 24px;
 			gap: 20px;
 			align-items: center;
-			padding: 30px;
+			padding: 28px;
 			border-radius: 20px;
-			background: #ffffff;
-			border: 1px solid #e2e8f0;
+			border: 1px solid transparent;
 			text-decoration: none;
 			color: inherit;
-			transition: all 0.25 ease;
+			transition: all 0.25s ease;
 			box-shadow: 0 4px 15px rgba(15, 23, 42, 0.02);
 		}
 
 		.chapter-card:hover {
-			border-color: #2563eb;
-			transform: translateY(-3px);
-			box-shadow: 0 15px 35px rgba(37, 99, 235, 0.08);
+			transform: translateY(-4px);
+			box-shadow: 0 18px 40px rgba(23, 32, 51, 0.08);
 		}
+
+		/* DIFFERENT CARD COLOURS FOR CLASS 9 */
+		.chapter-card:nth-child(1) { background: #eef6ff; border-color: #d9eaff; }
+		.chapter-card:nth-child(1):hover { border-color: #b8d8fa; }
+		.chapter-card:nth-child(1) .chapter-number { background: #dbeafe; color: #2563eb; }
+		.chapter-card:nth-child(1) .chapter-info span { color: #2563eb; }
+
+		.chapter-card:nth-child(2) { background: #f4efff; border-color: #e5d9ff; }
+		.chapter-card:nth-child(2):hover { border-color: #ccb7f5; }
+		.chapter-card:nth-child(2) .chapter-number { background: #ede9fe; color: #7c3aed; }
+		.chapter-card:nth-child(2) .chapter-info span { color: #7c3aed; }
+
+		.chapter-card:nth-child(3) { background: #eefbf5; border-color: #d7f1e3; }
+		.chapter-card:nth-child(3):hover { border-color: #b6e0c9; }
+		.chapter-card:nth-child(3) .chapter-number { background: #d1fae5; color: #059669; }
+		.chapter-card:nth-child(3) .chapter-info span { color: #059669; }
+
+		.chapter-card:nth-child(4) { background: #fff5ed; border-color: #f8dfcb; }
+		.chapter-card:nth-child(4):hover { border-color: #edc5a7; }
+		.chapter-card:nth-child(4) .chapter-number { background: #ffedd5; color: #ea580c; }
+		.chapter-card:nth-child(4) .chapter-info span { color: #ea580c; }
+
+		.chapter-card:nth-child(5) { background: #fffbea; border-color: #f5eab8; }
+		.chapter-card:nth-child(5):hover { border-color: #e7d58b; }
+		.chapter-card:nth-child(5) .chapter-number { background: #fef3c7; color: #d97706; }
+		.chapter-card:nth-child(5) .chapter-info span { color: #d97706; }
+
+		.chapter-card:nth-child(6) { background: #edf8fa; border-color: #d5ecef; }
+		.chapter-card:nth-child(6):hover { border-color: #afdce1; }
+		.chapter-card:nth-child(6) .chapter-number { background: #cffafe; color: #0891b2; }
+		.chapter-card:nth-child(6) .chapter-info span { color: #0891b2; }
+
+		.chapter-card:nth-child(7) { background: #f3f5ff; border-color: #dfe3fa; }
+		.chapter-card:nth-child(7):hover { border-color: #c2caf0; }
+		.chapter-card:nth-child(7) .chapter-number { background: #e0e7ff; color: #4f46e5; }
+		.chapter-card:nth-child(7) .chapter-info span { color: #4f46e5; }
+
+		.chapter-card:nth-child(8) { background: #eef2ff; border-color: #d9e0ff; }
+		.chapter-card:nth-child(8):hover { border-color: #b7c5f7; }
+		.chapter-card:nth-child(8) .chapter-number { background: #e0e7ff; color: #3b82f6; }
+		.chapter-card:nth-child(8) .chapter-info span { color: #3b82f6; }
+
+		.chapter-card:nth-child(9) { background: #f5efff; border-color: #e7dcfb; }
+		.chapter-card:nth-child(9):hover { border-color: #cbb9ed; }
+		.chapter-card:nth-child(9) .chapter-number { background: #f3e8ff; color: #9333ea; }
+		.chapter-card:nth-child(9) .chapter-info span { color: #9333ea; }
+
+		.chapter-card:nth-child(10) { background: #eef9f2; border-color: #d8eddf; }
+		.chapter-card:nth-child(10):hover { border-color: #b7ddc3; }
+		.chapter-card:nth-child(10) .chapter-number { background: #dcfce7; color: #16a34a; }
+		.chapter-card:nth-child(10) .chapter-info span { color: #16a34a; }
+
+		.chapter-card:nth-child(11) { background: #fff3f5; border-color: #f5dce1; }
+		.chapter-card:nth-child(11):hover { border-color: #e9bcc5; }
+		.chapter-card:nth-child(11) .chapter-number { background: #ffe4e6; color: #e11d48; }
+		.chapter-card:nth-child(11) .chapter-info span { color: #e11d48; }
+
+		.chapter-card:nth-child(12) { background: #f1f6ff; border-color: #dce7f8; }
+		.chapter-card:nth-child(12):hover { border-color: #bfd4ef; }
+		.chapter-card:nth-child(12) .chapter-number { background: #e0f2fe; color: #0284c7; }
+		.chapter-card:nth-child(12) .chapter-info span { color: #0284c7; }
 
 		.chapter-number {
 			width: 50px;
@@ -554,19 +613,17 @@ import "../styles/global.css";
 			align-items: center;
 			justify-content: center;
 			border-radius: 14px;
-			background: #eef4ff;
-			color: #2563eb;
 			font-size: 18px;
 			font-weight: 900;
 		}
 
 		.chapter-info span {
 			display: block;
-			color: #2563eb;
 			font-size: 11px;
 			font-weight: 900;
 			letter-spacing: 1px;
 			margin-bottom: 4px;
+			text-transform: uppercase;
 		}
 
 		.chapter-info h3 {
