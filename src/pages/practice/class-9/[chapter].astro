@@ -104,6 +104,10 @@ const { chapterData } = Astro.props;
               <div class="q-body">
                 <h3 class="q-text">{q.question}</h3>
 
+                {q.svg && (
+                  <div class="diagram-wrapper" set:html={q.svg} />
+                )}
+
                 {q.options && q.options.length > 0 && (
                   <div class="options-grid" data-answer={q.answer}>
                     {q.options.map((opt) => (
@@ -561,6 +565,24 @@ const { chapterData } = Astro.props;
     color: #1e293b;
     line-height: 1.5;
     margin: 0 0 16px;
+  }
+
+  .diagram-wrapper {
+    margin: 16px 0;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .diagram-wrapper :global(svg) {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .options-grid {
