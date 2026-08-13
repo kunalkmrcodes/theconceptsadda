@@ -1,4 +1,4 @@
-// Class 10 Diverse Practice Questions Dataset (6 CBSE Types)
+// Class 10 Fully Handcrafted Practice Questions Dataset
 export const class10Practice = [
   {
     "id": "real-numbers",
