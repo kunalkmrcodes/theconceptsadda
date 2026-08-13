@@ -1,0 +1,727 @@
+---
+import { class10Practice } from "../data/practiceClass10.js";
+import { class9Practice } from "../data/practiceClass9.js";
+
+const initialClass = 10;
+const initialChapter = class10Practice[0];
+---
+
+<section class="practice-section" id="practice">
+  <div class="practice-container">
+    
+    <!-- SECTION HEADER -->
+    <div class="section-intro text-center">
+      <div class="section-badge">
+        <span></span>
+        CHAPTER-WISE PRACTICE SETS
+      </div>
+      <h2>
+        Master Mathematics <br />
+        <span class="blue-text">20 Practice Questions per Chapter</span>
+      </h2>
+      <p class="section-desc">
+        Select your class and chapter below to solve 20 curated NCERT & Board Exam questions with step-by-step solutions.
+      </p>
+    </div>
+
+    <!-- CLASS SWITCHER -->
+    <div class="class-switcher-wrap">
+      <div class="class-switcher">
+        <button class="class-btn active" data-class="10">
+          <span class="class-num">10</span>
+          <span>Class 10 (14 Chapters)</span>
+        </button>
+        <button class="class-btn" data-class="9">
+          <span class="class-num">09</span>
+          <span>Class 9 (12 Chapters)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- CHAPTER SELECTOR PILLS -->
+    <div class="chapter-selector-wrapper">
+      <div class="selector-header">
+        <span class="selector-label">SELECT CHAPTER:</span>
+        <span class="selected-chap-name" id="currentChapterTitle">01. Real Numbers</span>
+      </div>
+      <div class="chapter-pills" id="chapterPills">
+        <!-- Chapter pills rendered dynamically or via Astro -->
+        {class10Practice.map((chap, idx) => (
+          <button 
+            class={`chap-pill ${idx === 0 ? 'active' : ''}`}
+            data-chap-id={chap.id}
+            data-class="10"
+          >
+            <span class="chap-num">{chap.chapterNumber}</span>
+            <span class="chap-title">{chap.title}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <!-- QUESTION FILTER BAR -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">Filter Type:</span>
+        <button class="filter-btn active" data-filter="all">All (20)</button>
+        <button class="filter-btn" data-filter="MCQ">MCQs</button>
+        <button class="filter-btn" data-filter="Short Answer">Short Answer</button>
+        <button class="filter-btn" data-filter="Long Answer">Long Answer</button>
+        <button class="filter-btn" data-filter="PYQ">Board PYQs</button>
+      </div>
+      <div class="question-count-badge" id="questionCountBadge">
+        Showing 20 of 20 Questions
+      </div>
+    </div>
+
+    <!-- QUESTIONS GRID -->
+    <div class="questions-list" id="questionsList">
+      {initialChapter.questions.map((q) => (
+        <div class="q-card" data-type={q.type} data-id={q.id}>
+          <div class="q-header">
+            <div class="q-meta">
+              <span class="q-number">Q{q.number}</span>
+              <span class="q-type-badge">{q.type}</span>
+              <span class="q-marks-badge">{q.marks} {q.marks === 1 ? 'Mark' : 'Marks'}</span>
+            </div>
+          </div>
+
+          <div class="q-body">
+            <h3 class="q-text">{q.question}</h3>
+
+            {q.options && (
+              <div class="options-grid">
+                {q.options.map((opt) => (
+                  <div class="option-item">{opt}</div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div class="q-footer">
+            <button class="toggle-sol-btn" data-target={`sol-${q.id}`}>
+              <span class="btn-icon">💡</span>
+              <span class="btn-label">Show Solution & Answer</span>
+            </button>
+          </div>
+
+          <div class="solution-box hidden" id={`sol-${q.id}`}>
+            <div class="sol-inner">
+              <div class="ans-line">
+                <strong>Correct Answer:</strong> <span>{q.answer}</span>
+              </div>
+              <div class="sol-content">
+                <strong>Step-by-step Solution:</strong>
+                <pre class="sol-text">{q.solution}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<script>
+  import { class10Practice } from "../data/practiceClass10.js";
+  import { class9Practice } from "../data/practiceClass9.js";
+
+  function initPractice() {
+    let currentClass = '10';
+    let currentChapId = class10Practice[0].id;
+    let currentFilter = 'all';
+
+    const classBtns = document.querySelectorAll('.class-btn');
+    const chapterPillsContainer = document.getElementById('chapterPills');
+    const currentChapTitleEl = document.getElementById('currentChapterTitle');
+    const questionsListContainer = document.getElementById('questionsList');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const countBadge = document.getElementById('questionCountBadge');
+
+    if (!questionsListContainer || !chapterPillsContainer) return;
+
+    function getChaptersForClass(cls) {
+      return cls === '10' ? class10Practice : class9Practice;
+    }
+
+    function renderChapterPills() {
+      const chapters = getChaptersForClass(currentClass);
+      chapterPillsContainer.innerHTML = chapters.map((chap) => `
+        <button 
+          class="chap-pill ${chap.id === currentChapId ? 'active' : ''}"
+          data-chap-id="${chap.id}"
+        >
+          <span class="chap-num">${chap.chapterNumber}</span>
+          <span class="chap-title">${chap.title}</span>
+        </button>
+      `).join('');
+
+      chapterPillsContainer.querySelectorAll('.chap-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          const chapId = pill.getAttribute('data-chap-id');
+          if (chapId) {
+            currentChapId = chapId;
+            updateUI();
+          }
+        });
+      });
+    }
+
+    function renderQuestions() {
+      const chapters = getChaptersForClass(currentClass);
+      const activeChap = chapters.find(c => c.id === currentChapId) || chapters[0];
+      
+      if (currentChapTitleEl) {
+        currentChapTitleEl.textContent = `${activeChap.chapterNumber}. ${activeChap.title}`;
+      }
+
+      let filteredQuestions = activeChap.questions;
+      if (currentFilter !== 'all') {
+        filteredQuestions = activeChap.questions.filter(q => q.type === currentFilter);
+      }
+
+      if (countBadge) {
+        countBadge.textContent = `Showing ${filteredQuestions.length} of ${activeChap.questions.length} Questions`;
+      }
+
+      if (filteredQuestions.length === 0) {
+        questionsListContainer.innerHTML = `
+          <div class="empty-state">
+            <p>No questions found for filter "${currentFilter}".</p>
+          </div>
+        `;
+        return;
+      }
+
+      questionsListContainer.innerHTML = filteredQuestions.map(q => `
+        <div class="q-card" data-type="${q.type}" data-id="${q.id}">
+          <div class="q-header">
+            <div class="q-meta">
+              <span class="q-number">Q${q.number}</span>
+              <span class="q-type-badge">${q.type}</span>
+              <span class="q-marks-badge">${q.marks} ${q.marks === 1 ? 'Mark' : 'Marks'}</span>
+            </div>
+          </div>
+
+          <div class="q-body">
+            <h3 class="q-text">${escapeHtml(q.question)}</h3>
+
+            ${q.options && q.options.length > 0 ? `
+              <div class="options-grid">
+                ${q.options.map(opt => `<div class="option-item">${escapeHtml(opt)}</div>`).join('')}
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="q-footer">
+            <button class="toggle-sol-btn" data-target="sol-${q.id}">
+              <span class="btn-icon">💡</span>
+              <span class="btn-label">Show Solution & Answer</span>
+            </button>
+          </div>
+
+          <div class="solution-box hidden" id="sol-${q.id}">
+            <div class="sol-inner">
+              <div class="ans-line">
+                <strong>Correct Answer:</strong> <span>${escapeHtml(q.answer)}</span>
+              </div>
+              <div class="sol-content">
+                <strong>Step-by-step Solution:</strong>
+                <pre class="sol-text">${escapeHtml(q.solution)}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      bindSolutionToggles();
+    }
+
+    function bindSolutionToggles() {
+      questionsListContainer.querySelectorAll('.toggle-sol-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const solBox = document.getElementById(targetId);
+          if (solBox) {
+            const isHidden = solBox.classList.contains('hidden');
+            if (isHidden) {
+              solBox.classList.remove('hidden');
+              btn.classList.add('active');
+              const label = btn.querySelector('.btn-label');
+              if (label) label.textContent = 'Hide Solution & Answer';
+            } else {
+              solBox.classList.add('hidden');
+              btn.classList.remove('active');
+              const label = btn.querySelector('.btn-label');
+              if (label) label.textContent = 'Show Solution & Answer';
+            }
+          }
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function updateUI() {
+      renderChapterPills();
+      renderQuestions();
+    }
+
+    classBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        classBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentClass = btn.getAttribute('data-class');
+        const chapters = getChaptersForClass(currentClass);
+        currentChapId = chapters[0].id;
+        updateUI();
+      });
+    });
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        renderQuestions();
+      });
+    });
+
+    updateUI();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPractice);
+  } else {
+    initPractice();
+  }
+</script>
+
+<style>
+  .practice-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #edf4ff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .practice-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+  }
+
+  .section-badge span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f4c430;
+  }
+
+  .section-intro h2 {
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 850;
+    line-height: 1.1;
+    color: #14213d;
+    margin: 0;
+  }
+
+  .section-desc {
+    max-width: 680px;
+    margin: 18px auto 0;
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  /* CLASS SWITCHER */
+  .class-switcher-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .class-switcher {
+    display: inline-flex;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+    border: 1px solid #e2e8f0;
+    gap: 6px;
+  }
+
+  .class-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 750;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .class-btn .class-num {
+    font-size: 13px;
+    font-weight: 900;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .class-btn.active {
+    background: #14213d;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(20, 33, 61, 0.2);
+  }
+
+  .class-btn.active .class-num {
+    background: #f4c430;
+    color: #14213d;
+  }
+
+  /* CHAPTER SELECTOR PILLS */
+  .chapter-selector-wrapper {
+    margin-top: 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(20, 33, 61, 0.04);
+  }
+
+  .selector-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .selector-label {
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 1px;
+    color: #94a3b8;
+  }
+
+  .selected-chap-name {
+    font-size: 18px;
+    font-weight: 850;
+    color: #2563eb;
+  }
+
+  .chapter-pills {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+
+  .chap-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .chap-pill:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .chap-pill.active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  }
+
+  .chap-num {
+    font-size: 11px;
+    font-weight: 850;
+    opacity: 0.85;
+  }
+
+  /* FILTER BAR */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    margin-right: 6px;
+  }
+
+  .filter-btn {
+    padding: 7px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .filter-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+
+  .filter-btn.active {
+    background: #14213d;
+    color: #ffffff;
+    border-color: #14213d;
+  }
+
+  .question-count-badge {
+    font-size: 13px;
+    font-weight: 750;
+    color: #64748b;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+
+  /* QUESTIONS LIST */
+  .questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .q-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 26px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(20, 33, 61, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .q-card:hover {
+    box-shadow: 0 14px 36px rgba(20, 33, 61, 0.08);
+  }
+
+  .q-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .q-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .q-number {
+    font-size: 14px;
+    font-weight: 900;
+    color: #14213d;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .q-type-badge {
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #eef4ff;
+    color: #2563eb;
+  }
+
+  .q-marks-badge {
+    font-size: 11px;
+    font-weight: 850;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #fff7d8;
+    color: #9a7400;
+  }
+
+  .q-text {
+    font-size: 17px;
+    font-weight: 750;
+    color: #1e293b;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .option-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+  }
+
+  .q-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .toggle-sol-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid #2563eb;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .toggle-sol-btn:hover,
+  .toggle-sol-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+  }
+
+  .solution-box {
+    margin-top: 16px;
+    border-radius: 14px;
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 20px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .solution-box.hidden {
+    display: none;
+  }
+
+  .ans-line {
+    font-size: 15px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ans-line strong {
+    color: #f4c430;
+  }
+
+  .sol-content strong {
+    font-size: 13px;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .sol-text {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    margin: 0;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 18px;
+    color: #64748b;
+  }
+
+  /* RESPONSIVE STYLING */
+  @media (max-width: 768px) {
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .filter-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .chapter-selector-wrapper {
+      padding: 16px;
+    }
+
+    .q-card {
+      padding: 18px;
+    }
+  }
+</style>
