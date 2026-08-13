@@ -1903,7 +1903,8 @@ export const class9Practice = [
         "marks": 2,
         "question": "A chord of length 16 cm is drawn in a circle of radius 10 cm. Find distance of chord from centre.",
         "answer": "6 cm",
-        "solution": "Perpendicular bisects chord: half chord = 8 cm. Distance d = \u221a(10\u00b2 - 8\u00b2) = \u221a36 = 6 cm."
+        "solution": "Perpendicular bisects chord: half chord = 8 cm. Distance d = \u221a(10\u00b2 - 8\u00b2) = \u221a36 = 6 cm.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"180\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"180\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"175\" y=\"85\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Chord AB --><line x1=\"110\" y1=\"140\" x2=\"250\" y2=\"140\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><text x=\"95\" y=\"145\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"255\" y=\"145\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><!-- Perpendicular OP --><line x1=\"180\" y1=\"100\" x2=\"180\" y2=\"140\" stroke=\"#059669\" stroke-width=\"2.5\" /><text x=\"185\" y=\"125\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">d = 6 cm</text><text x=\"180\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">P</text><!-- Radius OA --><line x1=\"180\" y1=\"100\" x2=\"110\" y2=\"140\" stroke=\"#e11d48\" stroke-width=\"2\" stroke-dasharray=\"4\" /><text x=\"125\" y=\"115\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">r = 10 cm</text></svg>"
       },
       {
         "id": "c9-cir-8",
@@ -1912,7 +1913,8 @@ export const class9Practice = [
         "marks": 2,
         "question": "Two concentric circles have radii 5 cm and 3 cm. Find length of chord of larger circle touching smaller circle.",
         "answer": "8 cm",
-        "solution": "Half chord = \u221a(5\u00b2 - 3\u00b2) = 4 cm. Full chord = 8 cm."
+        "solution": "Half chord = \u221a(5\u00b2 - 3\u00b2) = 4 cm. Full chord = 8 cm.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"180\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"180\" cy=\"100\" r=\"48\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\" stroke-dasharray=\"4\" /><circle cx=\"180\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"175\" y=\"85\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Chord AB of outer circle tangent to inner --><line x1=\"116\" y1=\"148\" x2=\"244\" y2=\"148\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><text x=\"100\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"250\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"180\" y=\"165\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">P (Point of Contact)</text></svg>"
       },
       {
         "id": "c9-cir-9",
@@ -1921,7 +1923,8 @@ export const class9Practice = [
         "marks": 2,
         "question": "In figure, \u2220AOB = 90\u00b0 and \u2220BOC = 120\u00b0. Find \u2220ABC if A, B, C lie on circle.",
         "answer": "75\u00b0",
-        "solution": "Reflex \u2220AOC = 360\u00b0 - (90+120) = 150\u00b0. Angle at B = 1/2 (150\u00b0) = 75\u00b0."
+        "solution": "Reflex \u2220AOC = 360\u00b0 - (90+120) = 150\u00b0. Angle at B = 1/2 (150\u00b0) = 75\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"180\" cy=\"100\" r=\"75\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"180\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"175\" y=\"120\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Points A, B, C on circle --><line x1=\"180\" y1=\"100\" x2=\"255\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"2\" /><text x=\"260\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><line x1=\"180\" y1=\"100\" x2=\"180\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" /><text x=\"180\" y=\"18\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><line x1=\"180\" y1=\"100\" x2=\"115\" y2=\"137\" stroke=\"#1e293b\" stroke-width=\"2\" /><text x=\"95\" y=\"145\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"200\" y=\"70\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">90\u00b0</text><text x=\"135\" y=\"70\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">120\u00b0</text></svg>"
       },
       {
         "id": "c9-cir-10",
@@ -1930,7 +1933,8 @@ export const class9Practice = [
         "marks": 2,
         "question": "ABCD is a cyclic quadrilateral. If \u2220A = 70\u00b0, find \u2220C.",
         "answer": "110\u00b0",
-        "solution": "Opposite angles sum to 180\u00b0: \u2220C = 180\u00b0 - 70\u00b0 = 110\u00b0."
+        "solution": "Opposite angles sum to 180\u00b0: \u2220C = 180\u00b0 - 70\u00b0 = 110\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"180\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><polygon points=\"120,45 240,45 255,145 105,145\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><text x=\"110\" y=\"35\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">A (70\u00b0)</text><text x=\"245\" y=\"35\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"260\" y=\"160\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">C (110\u00b0)</text><text x=\"90\" y=\"160\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">D</text></svg>"
       },
       {
         "id": "c9-cir-11",
@@ -2002,7 +2006,8 @@ export const class9Practice = [
         "marks": 5,
         "question": "In figure, \u2220ABC = 69\u00b0 and \u2220ACB = 31\u00b0. Find \u2220BDC.",
         "answer": "80\u00b0",
-        "solution": "In \u25b3ABC: \u2220BAC = 180\u00b0 - (69+31) = 80\u00b0. Angles in same segment: \u2220BDC = \u2220BAC = 80\u00b0."
+        "solution": "In \u25b3ABC: \u2220BAC = 180\u00b0 - (69+31) = 80\u00b0. Angles in same segment: \u2220BDC = \u2220BAC = 80\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"180\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><polygon points=\"180,20 105,140 255,140\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><polygon points=\"230,35 105,140 255,140\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\" stroke-dasharray=\"3\" /><text x=\"175\" y=\"15\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"90\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"260\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"235\" y=\"25\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">D (80\u00b0)</text><text x=\"115\" y=\"130\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">69\u00b0</text><text x=\"230\" y=\"130\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">31\u00b0</text></svg>"
       },
       {
         "id": "c9-cir-19",

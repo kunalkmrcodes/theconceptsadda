@@ -2035,7 +2035,8 @@ export const class10Practice = [
           "(D) 8.5 cm"
         ],
         "answer": "(A) \u221a119 cm",
-        "solution": "PT = \u221a(12\u00b2 - 5\u00b2) = \u221a(144 - 25) = \u221a119 cm."
+        "solution": "PT = \u221a(12\u00b2 - 5\u00b2) = \u221a(144 - 25) = \u221a119 cm.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Circle O --><circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"90\" y=\"95\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Point P on circle --><circle cx=\"100\" cy=\"150\" r=\"4\" fill=\"#1e293b\" /><text x=\"95\" y=\"170\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">P</text><!-- Tangent PT --><line x1=\"100\" y1=\"150\" x2=\"300\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.5\" /><text x=\"305\" y=\"155\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">T</text><!-- Line OT --><line x1=\"100\" y1=\"100\" x2=\"300\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><!-- Radius OP --><line x1=\"100\" y1=\"100\" x2=\"100\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4\" /><!-- Labels --><text x=\"70\" y=\"130\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">r = 5 cm</text><text x=\"190\" y=\"170\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">PT = ?</text><text x=\"190\" y=\"115\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">OT = 12 cm</text></svg>"
       },
       {
         "id": "c10-cir-2",
@@ -2065,7 +2066,8 @@ export const class10Practice = [
           "(D) 90\u00b0"
         ],
         "answer": "(A) 70\u00b0",
-        "solution": "Opposite angles in quadrilateral OPTQ are supplementary: 180\u00b0 - 110\u00b0 = 70\u00b0."
+        "solution": "Opposite angles in quadrilateral OPTQ are supplementary: 180\u00b0 - 110\u00b0 = 70\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"120\" cy=\"100\" r=\"60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"120\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"110\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Point T outside --><circle cx=\"300\" cy=\"100\" r=\"4\" fill=\"#1e293b\" /><text x=\"310\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">T</text><!-- Contact points P and Q --><circle cx=\"150\" cy=\"48\" r=\"4\" fill=\"#059669\" /><text x=\"145\" y=\"35\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">P</text><circle cx=\"150\" cy=\"152\" r=\"4\" fill=\"#059669\" /><text x=\"145\" y=\"170\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">Q</text><!-- Tangents TP and TQ --><line x1=\"300\" y1=\"100\" x2=\"150\" y2=\"48\" stroke=\"#059669\" stroke-width=\"2.5\" /><line x1=\"300\" y1=\"100\" x2=\"150\" y2=\"152\" stroke=\"#059669\" stroke-width=\"2.5\" /><!-- Radii OP and OQ --><line x1=\"120\" y1=\"100\" x2=\"150\" y2=\"48\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"3\" /><line x1=\"120\" y1=\"100\" x2=\"150\" y2=\"152\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"3\" /><!-- Angle labels --><text x=\"155\" y=\"105\" font-size=\"13\" font-weight=\"700\" fill=\"#e11d48\">110\u00b0 (POQ)</text><text x=\"240\" y=\"105\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">? (PTQ)</text></svg>"
       },
       {
         "id": "c10-cir-4",
@@ -2080,7 +2082,8 @@ export const class10Practice = [
           "(D) 80\u00b0"
         ],
         "answer": "(A) 50\u00b0",
-        "solution": "\u2220AOB = 180\u00b0 - 80\u00b0 = 100\u00b0. \u2220POA = 100\u00b0 / 2 = 50\u00b0."
+        "solution": "\u2220AOB = 180\u00b0 - 80\u00b0 = 100\u00b0. \u2220POA = 100\u00b0 / 2 = 50\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"130\" cy=\"100\" r=\"55\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"130\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"120\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><circle cx=\"300\" cy=\"100\" r=\"4\" fill=\"#1e293b\" /><text x=\"310\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">P</text><line x1=\"300\" y1=\"100\" x2=\"158\" y2=\"53\" stroke=\"#059669\" stroke-width=\"2.5\" /><line x1=\"300\" y1=\"100\" x2=\"158\" y2=\"147\" stroke=\"#059669\" stroke-width=\"2.5\" /><text x=\"155\" y=\"40\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">A</text><text x=\"155\" y=\"165\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">B</text><line x1=\"130\" y1=\"100\" x2=\"300\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-dasharray=\"4\" /><line x1=\"130\" y1=\"100\" x2=\"158\" y2=\"53\" stroke=\"#2563eb\" stroke-width=\"2\" /><text x=\"245\" y=\"95\" font-size=\"13\" font-weight=\"700\" fill=\"#e11d48\">80\u00b0 (APB)</text><text x=\"160\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">\u2220POA = ?</text></svg>"
       },
       {
         "id": "c10-cir-5",
@@ -2146,7 +2149,8 @@ export const class10Practice = [
         "marks": 2,
         "question": "A quadrilateral ABCD is drawn to circumscribe a circle. Prove that AB + CD = AD + BC.",
         "answer": "Proved",
-        "solution": "Equal tangents: AP=AS, BP=BQ, CR=CQ, DR=DS. Summing all 4 equations gives AB + CD = AD + BC."
+        "solution": "Equal tangents: AP=AS, BP=BQ, CR=CQ, DR=DS. Summing all 4 equations gives AB + CD = AD + BC.",
+        "svg": "<svg viewBox=\"0 0 360 220\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Inscribed Circle --><circle cx=\"180\" cy=\"110\" r=\"60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><!-- Quadrilateral ABCD --><polygon points=\"100,20 280,30 250,190 90,170\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><text x=\"90\" y=\"15\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"285\" y=\"25\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"255\" y=\"205\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"75\" y=\"180\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">D</text><!-- Contact points P, Q, R, S --><circle cx=\"185\" cy=\"25\" r=\"4\" fill=\"#e11d48\" /><text x=\"185\" y=\"15\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">P</text><circle cx=\"265\" cy=\"110\" r=\"4\" fill=\"#e11d48\" /><text x=\"275\" y=\"115\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">Q</text><circle cx=\"170\" cy=\"180\" r=\"4\" fill=\"#e11d48\" /><text x=\"170\" y=\"195\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">R</text><circle cx=\"95\" cy=\"95\" r=\"4\" fill=\"#e11d48\" /><text x=\"80\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\">S</text></svg>"
       },
       {
         "id": "c10-cir-11",
@@ -2218,7 +2222,8 @@ export const class10Practice = [
         "marks": 5,
         "question": "In figure, XY & X'Y' are parallel tangents. Tangent AB with point of contact C intersects XY at A & X'Y' at B. Prove \u2220AOB = 90\u00b0.",
         "answer": "Proved",
-        "solution": "\u25b3OPA \u2245 \u25b3OCA \u21d2 \u2220AOC = 1/2 \u2220POC. \u25b3OQB \u2245 \u25b3OCB \u21d2 \u2220COB = 1/2 \u2220QOC. \u2220AOB = 1/2 (180\u00b0) = 90\u00b0."
+        "solution": "\u25b3OPA \u2245 \u25b3OCA \u21d2 \u2220AOC = 1/2 \u2220POC. \u25b3OQB \u2245 \u25b3OCB \u21d2 \u2220COB = 1/2 \u2220QOC. \u2220AOB = 1/2 (180\u00b0) = 90\u00b0.",
+        "svg": "<svg viewBox=\"0 0 360 220\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Top Tangent XY --><line x1=\"30\" y1=\"30\" x2=\"330\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><text x=\"20\" y=\"25\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">X</text><text x=\"335\" y=\"25\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">Y</text><!-- Bottom Tangent X'Y' --><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><text x=\"20\" y=\"205\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">X'</text><text x=\"335\" y=\"205\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">Y'</text><!-- Circle O --><circle cx=\"180\" cy=\"110\" r=\"80\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.5\" /><circle cx=\"180\" cy=\"110\" r=\"4\" fill=\"#e11d48\" /><text x=\"165\" y=\"115\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><!-- Tangent AB touching at C --><line x1=\"90\" y1=\"30\" x2=\"270\" y2=\"190\" stroke=\"#059669\" stroke-width=\"2.5\" /><text x=\"75\" y=\"30\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">A</text><text x=\"280\" y=\"205\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">B</text><circle cx=\"180\" cy=\"110\" r=\"4\" fill=\"#e11d48\" /><text x=\"195\" y=\"105\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">C</text><!-- Lines OA and OB --><line x1=\"180\" y1=\"110\" x2=\"90\" y2=\"30\" stroke=\"#e11d48\" stroke-width=\"2\" stroke-dasharray=\"3\" /><line x1=\"180\" y1=\"110\" x2=\"270\" y2=\"190\" stroke=\"#e11d48\" stroke-width=\"2\" stroke-dasharray=\"3\" /><text x=\"140\" y=\"150\" font-size=\"13\" font-weight=\"700\" fill=\"#e11d48\">\u2220AOB = 90\u00b0</text></svg>"
       },
       {
         "id": "c10-cir-19",
@@ -2227,7 +2232,8 @@ export const class10Practice = [
         "marks": 5,
         "question": "PQ is chord of length 8 cm of circle of radius 5 cm. Tangents at P and Q intersect at T. Find length TP.",
         "answer": "20/3 cm (~6.67cm)",
-        "solution": "Let TR = y, TP = x. In \u25b3PRT: x\u00b2 = y\u00b2 + 16. In \u25b3OPT: x\u00b2 + 25 = (y+3)\u00b2 \u21d2 y = 16/3. x = \u221a(256/9 + 16) = 20/3 cm."
+        "solution": "Let TR = y, TP = x. In \u25b3PRT: x\u00b2 = y\u00b2 + 16. In \u25b3OPT: x\u00b2 + 25 = (y+3)\u00b2 \u21d2 y = 16/3. x = \u221a(256/9 + 16) = 20/3 cm.",
+        "svg": "<svg viewBox=\"0 0 360 200\" class=\"q-diagram\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"110\" cy=\"100\" r=\"60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><circle cx=\"110\" cy=\"100\" r=\"4\" fill=\"#e11d48\" /><text x=\"95\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#e11d48\">O</text><circle cx=\"300\" cy=\"100\" r=\"4\" fill=\"#1e293b\" /><text x=\"310\" y=\"105\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">T</text><line x1=\"300\" y1=\"100\" x2=\"146\" y2=\"52\" stroke=\"#059669\" stroke-width=\"2.5\" /><line x1=\"300\" y1=\"100\" x2=\"146\" y2=\"148\" stroke=\"#059669\" stroke-width=\"2.5\" /><text x=\"140\" y=\"40\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">P</text><text x=\"140\" y=\"165\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">Q</text><!-- Chord PQ --><line x1=\"146\" y1=\"52\" x2=\"146\" y2=\"148\" stroke=\"#1e293b\" stroke-width=\"2\" /><text x=\"155\" y=\"105\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">8 cm</text></svg>"
       },
       {
         "id": "c10-cir-20",
