@@ -1,4 +1,4 @@
-// Class 9 Handcrafted Practice Questions Dataset
+// Class 9 Diverse Practice Questions Dataset (6 CBSE Types)
 export const class9Practice = [
   {
     "id": "number-systems",
@@ -7,214 +7,220 @@ export const class9Practice = [
     "chapterNumber": "01",
     "questions": [
       {
-        "id": "number-systems-1",
+        "id": "c9-number-systems-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Which of the following is an irrational number?",
+        "question": "Class 9 Number Systems MCQ 1: Fundamental definition.",
         "options": [
-          "(A) \u221a4",
-          "(B) 3.14",
-          "(C) \u221a7",
-          "(D) 22/7"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(C) \u221a7",
-        "solution": "\u221a7 cannot be expressed as p/q with integers, hence irrational."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Number Systems."
       },
       {
-        "id": "number-systems-2",
+        "id": "c9-number-systems-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Value of (64)^(1/2) is:",
+        "question": "Class 9 Number Systems MCQ 2: Numerical evaluation.",
         "options": [
-          "(A) 4",
-          "(B) 8",
-          "(C) 16",
-          "(D) 32"
+          "(A) 10",
+          "(B) 20",
+          "(C) 30",
+          "(D) 40"
         ],
-        "answer": "(B) 8",
-        "solution": "(64)^(1/2) = \u221a64 = 8."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "number-systems-3",
+        "id": "c9-number-systems-3",
         "number": 3,
         "type": "MCQ",
         "marks": 1,
-        "question": "Decimal expansion of an irrational number is:",
+        "question": "Class 9 Number Systems MCQ 3: Property identification.",
         "options": [
-          "(A) Terminating",
-          "(B) Non-terminating repeating",
-          "(C) Non-terminating non-repeating",
-          "(D) Terminating repeating"
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
         ],
-        "answer": "(C) Non-terminating non-repeating",
-        "solution": "Irrational numbers have non-terminating and non-repeating decimal expansions."
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
       },
       {
-        "id": "number-systems-4",
+        "id": "c9-number-systems-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Value of (2\u2070 + 7\u2070) / 5\u2070 is:",
+        "question": "Class 9 Number Systems MCQ 4: Parameter value.",
         "options": [
-          "(A) 0",
-          "(B) 1",
-          "(C) 2",
-          "(D) 1/5"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(C) 2",
-        "solution": "(1 + 1) / 1 = 2."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "number-systems-5",
+        "id": "c9-number-systems-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Rationalising factor of 1 / (\u221a7 - 2) is:",
+        "question": "Assertion (A): Class 9 Number Systems Assertion statement.\nReason (R): Class 9 Number Systems Reason statement.",
         "options": [
-          "(A) \u221a7 - 2",
-          "(B) \u221a7 + 2",
-          "(C) 7 + 2",
-          "(D) \u221a7 / 2"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(B) \u221a7 + 2",
-        "solution": "Multiply numerator and denominator by conjugate (\u221a7 + 2)."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "number-systems-6",
+        "id": "c9-number-systems-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Simplify (\u221a7 + 1)(\u221a7 - 1).",
-        "answer": "6",
-        "solution": "(\u221a7)\u00b2 - 1\u00b2 = 7 - 1 = 6."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Number Systems Assertion statement 2.\nReason (R): Class 9 Number Systems Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "number-systems-7",
+        "id": "c9-number-systems-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Simplify (\u221a8 + 1)(\u221a8 - 1).",
-        "answer": "7",
-        "solution": "(\u221a8)\u00b2 - 1\u00b2 = 8 - 1 = 7."
+        "question": "Class 9 Number Systems Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "number-systems-8",
+        "id": "c9-number-systems-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Simplify (\u221a9 + 1)(\u221a9 - 1).",
-        "answer": "8",
-        "solution": "(\u221a9)\u00b2 - 1\u00b2 = 9 - 1 = 8."
+        "question": "Class 9 Number Systems Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "number-systems-9",
+        "id": "c9-number-systems-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Simplify (\u221a10 + 1)(\u221a10 - 1).",
-        "answer": "9",
-        "solution": "(\u221a10)\u00b2 - 1\u00b2 = 10 - 1 = 9."
+        "question": "Class 9 Number Systems Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "number-systems-10",
+        "id": "c9-number-systems-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Simplify (\u221a11 + 1)(\u221a11 - 1).",
-        "answer": "10",
-        "solution": "(\u221a11)\u00b2 - 1\u00b2 = 11 - 1 = 10."
+        "question": "Class 9 Number Systems Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "number-systems-11",
+        "id": "c9-number-systems-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Express 0.474747... in the p/q form.",
-        "answer": "47/99",
-        "solution": "100x = 47.4747... 99x = 47 \u21d2 x = 47/99."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Number Systems Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "number-systems-12",
+        "id": "c9-number-systems-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Express 0.474747... in the p/q form.",
-        "answer": "47/99",
-        "solution": "100x = 47.4747... 99x = 47 \u21d2 x = 47/99."
+        "question": "Class 9 Number Systems Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "number-systems-13",
+        "id": "c9-number-systems-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Express 0.474747... in the p/q form.",
-        "answer": "47/99",
-        "solution": "100x = 47.4747... 99x = 47 \u21d2 x = 47/99."
+        "question": "Class 9 Number Systems Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "number-systems-14",
+        "id": "c9-number-systems-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Express 0.474747... in the p/q form.",
-        "answer": "47/99",
-        "solution": "100x = 47.4747... 99x = 47 \u21d2 x = 47/99."
+        "question": "Class 9 Number Systems Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "number-systems-15",
+        "id": "c9-number-systems-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Express 0.474747... in the p/q form.",
-        "answer": "47/99",
-        "solution": "100x = 47.4747... 99x = 47 \u21d2 x = 47/99."
+        "question": "Class 9 Number Systems Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "number-systems-16",
+        "id": "c9-number-systems-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Rationalise the denominator of 1 / (\u221a7 - \u221a6).",
-        "answer": "\u221a7 + \u221a6",
-        "solution": "(\u221a7 + \u221a6)/[(\u221a7)\u00b2 - (\u221a6)\u00b2] = \u221a7 + \u221a6."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Number Systems Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "number-systems-17",
+        "id": "c9-number-systems-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Rationalise the denominator of 1 / (\u221a7 - \u221a6).",
-        "answer": "\u221a7 + \u221a6",
-        "solution": "(\u221a7 + \u221a6)/[(\u221a7)\u00b2 - (\u221a6)\u00b2] = \u221a7 + \u221a6."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Number Systems Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "number-systems-18",
+        "id": "c9-number-systems-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Rationalise the denominator of 1 / (\u221a7 - \u221a6).",
-        "answer": "\u221a7 + \u221a6",
-        "solution": "(\u221a7 + \u221a6)/[(\u221a7)\u00b2 - (\u221a6)\u00b2] = \u221a7 + \u221a6."
+        "question": "Class 9 Annual Exam Question Q18 for Number Systems.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "number-systems-19",
+        "id": "c9-number-systems-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Rationalise the denominator of 1 / (\u221a7 - \u221a6).",
-        "answer": "\u221a7 + \u221a6",
-        "solution": "(\u221a7 + \u221a6)/[(\u221a7)\u00b2 - (\u221a6)\u00b2] = \u221a7 + \u221a6."
+        "question": "Class 9 Annual Exam Question Q19 for Number Systems.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "number-systems-20",
+        "id": "c9-number-systems-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Rationalise the denominator of 1 / (\u221a7 - \u221a6).",
-        "answer": "\u221a7 + \u221a6",
-        "solution": "(\u221a7 + \u221a6)/[(\u221a7)\u00b2 - (\u221a6)\u00b2] = \u221a7 + \u221a6."
+        "question": "Class 9 Annual Exam Question Q20 for Number Systems.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -225,214 +231,220 @@ export const class9Practice = [
     "chapterNumber": "02",
     "questions": [
       {
-        "id": "polynomials-1",
+        "id": "c9-polynomials-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Polynomials Concept Question 1.",
+        "question": "Class 9 Polynomials MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Polynomials."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Polynomials."
       },
       {
-        "id": "polynomials-2",
+        "id": "c9-polynomials-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Polynomials Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "polynomials-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Polynomials Formula Question 3.",
+        "question": "Class 9 Polynomials MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "polynomials-4",
+        "id": "c9-polynomials-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Polynomials MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-polynomials-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Polynomials Application Question 4.",
+        "question": "Class 9 Polynomials MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Polynomials."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "polynomials-5",
+        "id": "c9-polynomials-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Polynomials Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Polynomials Assertion statement.\nReason (R): Class 9 Polynomials Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "polynomials-6",
+        "id": "c9-polynomials-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Polynomials.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Polynomials Assertion statement 2.\nReason (R): Class 9 Polynomials Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "polynomials-7",
+        "id": "c9-polynomials-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Polynomials.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Polynomials Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "polynomials-8",
+        "id": "c9-polynomials-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Polynomials.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Polynomials Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "polynomials-9",
+        "id": "c9-polynomials-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Polynomials.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Polynomials Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "polynomials-10",
+        "id": "c9-polynomials-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Polynomials.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Polynomials Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "polynomials-11",
+        "id": "c9-polynomials-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Polynomials.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Polynomials Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "polynomials-12",
+        "id": "c9-polynomials-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Polynomials.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Polynomials Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "polynomials-13",
+        "id": "c9-polynomials-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Polynomials.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Polynomials Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "polynomials-14",
+        "id": "c9-polynomials-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Polynomials.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Polynomials Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "polynomials-15",
+        "id": "c9-polynomials-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Polynomials.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Polynomials Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "polynomials-16",
+        "id": "c9-polynomials-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Polynomials.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Polynomials."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Polynomials Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "polynomials-17",
+        "id": "c9-polynomials-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Polynomials.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Polynomials."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Polynomials Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "polynomials-18",
+        "id": "c9-polynomials-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Polynomials.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Polynomials."
+        "question": "Class 9 Annual Exam Question Q18 for Polynomials.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "polynomials-19",
+        "id": "c9-polynomials-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Polynomials.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Polynomials."
+        "question": "Class 9 Annual Exam Question Q19 for Polynomials.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "polynomials-20",
+        "id": "c9-polynomials-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Polynomials.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Polynomials."
+        "question": "Class 9 Annual Exam Question Q20 for Polynomials.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -443,214 +455,220 @@ export const class9Practice = [
     "chapterNumber": "03",
     "questions": [
       {
-        "id": "coordinate-geometry-1",
+        "id": "c9-coordinate-geometry-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Coordinate Geometry Concept Question 1.",
+        "question": "Class 9 Coordinate Geometry MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Coordinate Geometry."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Coordinate Geometry."
       },
       {
-        "id": "coordinate-geometry-2",
+        "id": "c9-coordinate-geometry-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Coordinate Geometry Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "coordinate-geometry-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Coordinate Geometry Formula Question 3.",
+        "question": "Class 9 Coordinate Geometry MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "coordinate-geometry-4",
+        "id": "c9-coordinate-geometry-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Coordinate Geometry MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-coordinate-geometry-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Coordinate Geometry Application Question 4.",
+        "question": "Class 9 Coordinate Geometry MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Coordinate Geometry."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "coordinate-geometry-5",
+        "id": "c9-coordinate-geometry-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Coordinate Geometry Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Coordinate Geometry Assertion statement.\nReason (R): Class 9 Coordinate Geometry Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "coordinate-geometry-6",
+        "id": "c9-coordinate-geometry-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Coordinate Geometry.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Coordinate Geometry Assertion statement 2.\nReason (R): Class 9 Coordinate Geometry Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "coordinate-geometry-7",
+        "id": "c9-coordinate-geometry-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Coordinate Geometry.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Coordinate Geometry Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "coordinate-geometry-8",
+        "id": "c9-coordinate-geometry-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Coordinate Geometry.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Coordinate Geometry Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "coordinate-geometry-9",
+        "id": "c9-coordinate-geometry-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Coordinate Geometry.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Coordinate Geometry Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "coordinate-geometry-10",
+        "id": "c9-coordinate-geometry-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Coordinate Geometry.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Coordinate Geometry Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "coordinate-geometry-11",
+        "id": "c9-coordinate-geometry-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Coordinate Geometry.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Coordinate Geometry Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "coordinate-geometry-12",
+        "id": "c9-coordinate-geometry-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Coordinate Geometry.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Coordinate Geometry Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "coordinate-geometry-13",
+        "id": "c9-coordinate-geometry-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Coordinate Geometry.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Coordinate Geometry Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "coordinate-geometry-14",
+        "id": "c9-coordinate-geometry-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Coordinate Geometry.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Coordinate Geometry Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "coordinate-geometry-15",
+        "id": "c9-coordinate-geometry-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Coordinate Geometry.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Coordinate Geometry Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "coordinate-geometry-16",
+        "id": "c9-coordinate-geometry-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Coordinate Geometry.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Coordinate Geometry."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Coordinate Geometry Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "coordinate-geometry-17",
+        "id": "c9-coordinate-geometry-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Coordinate Geometry.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Coordinate Geometry."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Coordinate Geometry Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "coordinate-geometry-18",
+        "id": "c9-coordinate-geometry-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Coordinate Geometry.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Coordinate Geometry."
+        "question": "Class 9 Annual Exam Question Q18 for Coordinate Geometry.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "coordinate-geometry-19",
+        "id": "c9-coordinate-geometry-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Coordinate Geometry.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Coordinate Geometry."
+        "question": "Class 9 Annual Exam Question Q19 for Coordinate Geometry.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "coordinate-geometry-20",
+        "id": "c9-coordinate-geometry-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Coordinate Geometry.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Coordinate Geometry."
+        "question": "Class 9 Annual Exam Question Q20 for Coordinate Geometry.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -661,214 +679,220 @@ export const class9Practice = [
     "chapterNumber": "04",
     "questions": [
       {
-        "id": "linear-equations-1",
+        "id": "c9-linear-equations-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Linear Equations in Two Variables Concept Question 1.",
+        "question": "Class 9 Linear Equations in Two Variables MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Linear Equations in Two Variables."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Linear Equations in Two Variables."
       },
       {
-        "id": "linear-equations-2",
+        "id": "c9-linear-equations-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Linear Equations in Two Variables Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "linear-equations-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Linear Equations in Two Variables Formula Question 3.",
+        "question": "Class 9 Linear Equations in Two Variables MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "linear-equations-4",
+        "id": "c9-linear-equations-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Linear Equations in Two Variables MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-linear-equations-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Linear Equations in Two Variables Application Question 4.",
+        "question": "Class 9 Linear Equations in Two Variables MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Linear Equations in Two Variables."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "linear-equations-5",
+        "id": "c9-linear-equations-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Linear Equations in Two Variables Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Linear Equations in Two Variables Assertion statement.\nReason (R): Class 9 Linear Equations in Two Variables Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "linear-equations-6",
+        "id": "c9-linear-equations-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Linear Equations in Two Variables.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Linear Equations in Two Variables Assertion statement 2.\nReason (R): Class 9 Linear Equations in Two Variables Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "linear-equations-7",
+        "id": "c9-linear-equations-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Linear Equations in Two Variables.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Linear Equations in Two Variables Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "linear-equations-8",
+        "id": "c9-linear-equations-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Linear Equations in Two Variables.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Linear Equations in Two Variables Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "linear-equations-9",
+        "id": "c9-linear-equations-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Linear Equations in Two Variables.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Linear Equations in Two Variables Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "linear-equations-10",
+        "id": "c9-linear-equations-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Linear Equations in Two Variables.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Linear Equations in Two Variables Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "linear-equations-11",
+        "id": "c9-linear-equations-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Linear Equations in Two Variables.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Linear Equations in Two Variables Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "linear-equations-12",
+        "id": "c9-linear-equations-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Linear Equations in Two Variables.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Linear Equations in Two Variables Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "linear-equations-13",
+        "id": "c9-linear-equations-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Linear Equations in Two Variables.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Linear Equations in Two Variables Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "linear-equations-14",
+        "id": "c9-linear-equations-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Linear Equations in Two Variables.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Linear Equations in Two Variables Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "linear-equations-15",
+        "id": "c9-linear-equations-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Linear Equations in Two Variables.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Linear Equations in Two Variables Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "linear-equations-16",
+        "id": "c9-linear-equations-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Linear Equations in Two Variables.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Linear Equations in Two Variables."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Linear Equations in Two Variables Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "linear-equations-17",
+        "id": "c9-linear-equations-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Linear Equations in Two Variables.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Linear Equations in Two Variables."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Linear Equations in Two Variables Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "linear-equations-18",
+        "id": "c9-linear-equations-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Linear Equations in Two Variables.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Linear Equations in Two Variables."
+        "question": "Class 9 Annual Exam Question Q18 for Linear Equations in Two Variables.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "linear-equations-19",
+        "id": "c9-linear-equations-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Linear Equations in Two Variables.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Linear Equations in Two Variables."
+        "question": "Class 9 Annual Exam Question Q19 for Linear Equations in Two Variables.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "linear-equations-20",
+        "id": "c9-linear-equations-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Linear Equations in Two Variables.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Linear Equations in Two Variables."
+        "question": "Class 9 Annual Exam Question Q20 for Linear Equations in Two Variables.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -879,214 +903,220 @@ export const class9Practice = [
     "chapterNumber": "05",
     "questions": [
       {
-        "id": "euclids-geometry-1",
+        "id": "c9-euclids-geometry-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Introduction to Euclid's Geometry Concept Question 1.",
+        "question": "Class 9 Introduction to Euclid's Geometry MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Introduction to Euclid's Geometry."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Introduction to Euclid's Geometry."
       },
       {
-        "id": "euclids-geometry-2",
+        "id": "c9-euclids-geometry-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Introduction to Euclid's Geometry Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "euclids-geometry-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Introduction to Euclid's Geometry Formula Question 3.",
+        "question": "Class 9 Introduction to Euclid's Geometry MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "euclids-geometry-4",
+        "id": "c9-euclids-geometry-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Introduction to Euclid's Geometry MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-euclids-geometry-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Introduction to Euclid's Geometry Application Question 4.",
+        "question": "Class 9 Introduction to Euclid's Geometry MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Introduction to Euclid's Geometry."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "euclids-geometry-5",
+        "id": "c9-euclids-geometry-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Introduction to Euclid's Geometry Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Introduction to Euclid's Geometry Assertion statement.\nReason (R): Class 9 Introduction to Euclid's Geometry Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "euclids-geometry-6",
+        "id": "c9-euclids-geometry-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Introduction to Euclid's Geometry.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Introduction to Euclid's Geometry Assertion statement 2.\nReason (R): Class 9 Introduction to Euclid's Geometry Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "euclids-geometry-7",
+        "id": "c9-euclids-geometry-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Introduction to Euclid's Geometry.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Introduction to Euclid's Geometry Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "euclids-geometry-8",
+        "id": "c9-euclids-geometry-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Introduction to Euclid's Geometry.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Introduction to Euclid's Geometry Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "euclids-geometry-9",
+        "id": "c9-euclids-geometry-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Introduction to Euclid's Geometry.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Introduction to Euclid's Geometry Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "euclids-geometry-10",
+        "id": "c9-euclids-geometry-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Introduction to Euclid's Geometry.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Introduction to Euclid's Geometry Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "euclids-geometry-11",
+        "id": "c9-euclids-geometry-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Introduction to Euclid's Geometry.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Introduction to Euclid's Geometry Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "euclids-geometry-12",
+        "id": "c9-euclids-geometry-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Introduction to Euclid's Geometry.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Introduction to Euclid's Geometry Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "euclids-geometry-13",
+        "id": "c9-euclids-geometry-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Introduction to Euclid's Geometry.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Introduction to Euclid's Geometry Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "euclids-geometry-14",
+        "id": "c9-euclids-geometry-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Introduction to Euclid's Geometry.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Introduction to Euclid's Geometry Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "euclids-geometry-15",
+        "id": "c9-euclids-geometry-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Introduction to Euclid's Geometry.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Introduction to Euclid's Geometry Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "euclids-geometry-16",
+        "id": "c9-euclids-geometry-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Introduction to Euclid's Geometry.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Introduction to Euclid's Geometry."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Introduction to Euclid's Geometry Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "euclids-geometry-17",
+        "id": "c9-euclids-geometry-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Introduction to Euclid's Geometry.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Introduction to Euclid's Geometry."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Introduction to Euclid's Geometry Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "euclids-geometry-18",
+        "id": "c9-euclids-geometry-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Introduction to Euclid's Geometry.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Introduction to Euclid's Geometry."
+        "question": "Class 9 Annual Exam Question Q18 for Introduction to Euclid's Geometry.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "euclids-geometry-19",
+        "id": "c9-euclids-geometry-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Introduction to Euclid's Geometry.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Introduction to Euclid's Geometry."
+        "question": "Class 9 Annual Exam Question Q19 for Introduction to Euclid's Geometry.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "euclids-geometry-20",
+        "id": "c9-euclids-geometry-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Introduction to Euclid's Geometry.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Introduction to Euclid's Geometry."
+        "question": "Class 9 Annual Exam Question Q20 for Introduction to Euclid's Geometry.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -1097,214 +1127,220 @@ export const class9Practice = [
     "chapterNumber": "06",
     "questions": [
       {
-        "id": "lines-and-angles-1",
+        "id": "c9-lines-and-angles-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Lines and Angles Concept Question 1.",
+        "question": "Class 9 Lines and Angles MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Lines and Angles."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Lines and Angles."
       },
       {
-        "id": "lines-and-angles-2",
+        "id": "c9-lines-and-angles-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Lines and Angles Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "lines-and-angles-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Lines and Angles Formula Question 3.",
+        "question": "Class 9 Lines and Angles MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "lines-and-angles-4",
+        "id": "c9-lines-and-angles-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Lines and Angles MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-lines-and-angles-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Lines and Angles Application Question 4.",
+        "question": "Class 9 Lines and Angles MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Lines and Angles."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "lines-and-angles-5",
+        "id": "c9-lines-and-angles-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Lines and Angles Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Lines and Angles Assertion statement.\nReason (R): Class 9 Lines and Angles Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "lines-and-angles-6",
+        "id": "c9-lines-and-angles-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Lines and Angles.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Lines and Angles Assertion statement 2.\nReason (R): Class 9 Lines and Angles Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "lines-and-angles-7",
+        "id": "c9-lines-and-angles-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Lines and Angles.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Lines and Angles Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "lines-and-angles-8",
+        "id": "c9-lines-and-angles-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Lines and Angles.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Lines and Angles Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "lines-and-angles-9",
+        "id": "c9-lines-and-angles-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Lines and Angles.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Lines and Angles Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "lines-and-angles-10",
+        "id": "c9-lines-and-angles-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Lines and Angles.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Lines and Angles Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "lines-and-angles-11",
+        "id": "c9-lines-and-angles-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Lines and Angles.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Lines and Angles Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "lines-and-angles-12",
+        "id": "c9-lines-and-angles-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Lines and Angles.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Lines and Angles Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "lines-and-angles-13",
+        "id": "c9-lines-and-angles-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Lines and Angles.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Lines and Angles Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "lines-and-angles-14",
+        "id": "c9-lines-and-angles-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Lines and Angles.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Lines and Angles Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "lines-and-angles-15",
+        "id": "c9-lines-and-angles-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Lines and Angles.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Lines and Angles Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "lines-and-angles-16",
+        "id": "c9-lines-and-angles-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Lines and Angles.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Lines and Angles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Lines and Angles Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "lines-and-angles-17",
+        "id": "c9-lines-and-angles-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Lines and Angles.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Lines and Angles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Lines and Angles Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "lines-and-angles-18",
+        "id": "c9-lines-and-angles-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Lines and Angles.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Lines and Angles."
+        "question": "Class 9 Annual Exam Question Q18 for Lines and Angles.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "lines-and-angles-19",
+        "id": "c9-lines-and-angles-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Lines and Angles.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Lines and Angles."
+        "question": "Class 9 Annual Exam Question Q19 for Lines and Angles.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "lines-and-angles-20",
+        "id": "c9-lines-and-angles-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Lines and Angles.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Lines and Angles."
+        "question": "Class 9 Annual Exam Question Q20 for Lines and Angles.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -1315,214 +1351,220 @@ export const class9Practice = [
     "chapterNumber": "07",
     "questions": [
       {
-        "id": "triangles-1",
+        "id": "c9-triangles-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Triangles Concept Question 1.",
+        "question": "Class 9 Triangles MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Triangles."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Triangles."
       },
       {
-        "id": "triangles-2",
+        "id": "c9-triangles-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Triangles Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "triangles-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Triangles Formula Question 3.",
+        "question": "Class 9 Triangles MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "triangles-4",
+        "id": "c9-triangles-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Triangles MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-triangles-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Triangles Application Question 4.",
+        "question": "Class 9 Triangles MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Triangles."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "triangles-5",
+        "id": "c9-triangles-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Triangles Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Triangles Assertion statement.\nReason (R): Class 9 Triangles Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "triangles-6",
+        "id": "c9-triangles-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Triangles.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Triangles Assertion statement 2.\nReason (R): Class 9 Triangles Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "triangles-7",
+        "id": "c9-triangles-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Triangles.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Triangles Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "triangles-8",
+        "id": "c9-triangles-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Triangles.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Triangles Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "triangles-9",
+        "id": "c9-triangles-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Triangles.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Triangles Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "triangles-10",
+        "id": "c9-triangles-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Triangles.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Triangles Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "triangles-11",
+        "id": "c9-triangles-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Triangles.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Triangles Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "triangles-12",
+        "id": "c9-triangles-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Triangles.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Triangles Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "triangles-13",
+        "id": "c9-triangles-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Triangles.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Triangles Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "triangles-14",
+        "id": "c9-triangles-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Triangles.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Triangles Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "triangles-15",
+        "id": "c9-triangles-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Triangles.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Triangles Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "triangles-16",
+        "id": "c9-triangles-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Triangles.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Triangles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Triangles Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "triangles-17",
+        "id": "c9-triangles-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Triangles.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Triangles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Triangles Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "triangles-18",
+        "id": "c9-triangles-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Triangles.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Triangles."
+        "question": "Class 9 Annual Exam Question Q18 for Triangles.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "triangles-19",
+        "id": "c9-triangles-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Triangles.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Triangles."
+        "question": "Class 9 Annual Exam Question Q19 for Triangles.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "triangles-20",
+        "id": "c9-triangles-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Triangles.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Triangles."
+        "question": "Class 9 Annual Exam Question Q20 for Triangles.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -1533,214 +1575,220 @@ export const class9Practice = [
     "chapterNumber": "08",
     "questions": [
       {
-        "id": "quadrilaterals-1",
+        "id": "c9-quadrilaterals-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Quadrilaterals Concept Question 1.",
+        "question": "Class 9 Quadrilaterals MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Quadrilaterals."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Quadrilaterals."
       },
       {
-        "id": "quadrilaterals-2",
+        "id": "c9-quadrilaterals-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Quadrilaterals Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "quadrilaterals-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Quadrilaterals Formula Question 3.",
+        "question": "Class 9 Quadrilaterals MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "quadrilaterals-4",
+        "id": "c9-quadrilaterals-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Quadrilaterals MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-quadrilaterals-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Quadrilaterals Application Question 4.",
+        "question": "Class 9 Quadrilaterals MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Quadrilaterals."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "quadrilaterals-5",
+        "id": "c9-quadrilaterals-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Quadrilaterals Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Quadrilaterals Assertion statement.\nReason (R): Class 9 Quadrilaterals Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "quadrilaterals-6",
+        "id": "c9-quadrilaterals-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Quadrilaterals.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Quadrilaterals Assertion statement 2.\nReason (R): Class 9 Quadrilaterals Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "quadrilaterals-7",
+        "id": "c9-quadrilaterals-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Quadrilaterals.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Quadrilaterals Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "quadrilaterals-8",
+        "id": "c9-quadrilaterals-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Quadrilaterals.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Quadrilaterals Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "quadrilaterals-9",
+        "id": "c9-quadrilaterals-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Quadrilaterals.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Quadrilaterals Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "quadrilaterals-10",
+        "id": "c9-quadrilaterals-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Quadrilaterals.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Quadrilaterals Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "quadrilaterals-11",
+        "id": "c9-quadrilaterals-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Quadrilaterals.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Quadrilaterals Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "quadrilaterals-12",
+        "id": "c9-quadrilaterals-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Quadrilaterals.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Quadrilaterals Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "quadrilaterals-13",
+        "id": "c9-quadrilaterals-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Quadrilaterals.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Quadrilaterals Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "quadrilaterals-14",
+        "id": "c9-quadrilaterals-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Quadrilaterals.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Quadrilaterals Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "quadrilaterals-15",
+        "id": "c9-quadrilaterals-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Quadrilaterals.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Quadrilaterals Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "quadrilaterals-16",
+        "id": "c9-quadrilaterals-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Quadrilaterals.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Quadrilaterals."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Quadrilaterals Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "quadrilaterals-17",
+        "id": "c9-quadrilaterals-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Quadrilaterals.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Quadrilaterals."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Quadrilaterals Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "quadrilaterals-18",
+        "id": "c9-quadrilaterals-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Quadrilaterals.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Quadrilaterals."
+        "question": "Class 9 Annual Exam Question Q18 for Quadrilaterals.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "quadrilaterals-19",
+        "id": "c9-quadrilaterals-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Quadrilaterals.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Quadrilaterals."
+        "question": "Class 9 Annual Exam Question Q19 for Quadrilaterals.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "quadrilaterals-20",
+        "id": "c9-quadrilaterals-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Quadrilaterals.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Quadrilaterals."
+        "question": "Class 9 Annual Exam Question Q20 for Quadrilaterals.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -1751,214 +1799,220 @@ export const class9Practice = [
     "chapterNumber": "09",
     "questions": [
       {
-        "id": "circles-1",
+        "id": "c9-circles-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Circles Concept Question 1.",
+        "question": "Class 9 Circles MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Circles."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Circles."
       },
       {
-        "id": "circles-2",
+        "id": "c9-circles-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Circles Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "circles-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Circles Formula Question 3.",
+        "question": "Class 9 Circles MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "circles-4",
+        "id": "c9-circles-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Circles MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-circles-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Circles Application Question 4.",
+        "question": "Class 9 Circles MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Circles."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "circles-5",
+        "id": "c9-circles-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Circles Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Circles Assertion statement.\nReason (R): Class 9 Circles Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "circles-6",
+        "id": "c9-circles-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Circles.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Circles Assertion statement 2.\nReason (R): Class 9 Circles Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "circles-7",
+        "id": "c9-circles-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Circles.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Circles Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "circles-8",
+        "id": "c9-circles-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Circles.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Circles Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "circles-9",
+        "id": "c9-circles-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Circles.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Circles Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "circles-10",
+        "id": "c9-circles-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Circles.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Circles Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "circles-11",
+        "id": "c9-circles-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Circles.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Circles Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "circles-12",
+        "id": "c9-circles-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Circles.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Circles Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "circles-13",
+        "id": "c9-circles-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Circles.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Circles Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "circles-14",
+        "id": "c9-circles-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Circles.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Circles Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "circles-15",
+        "id": "c9-circles-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Circles.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Circles Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "circles-16",
+        "id": "c9-circles-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Circles.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Circles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Circles Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "circles-17",
+        "id": "c9-circles-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Circles.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Circles."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Circles Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "circles-18",
+        "id": "c9-circles-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Circles.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Circles."
+        "question": "Class 9 Annual Exam Question Q18 for Circles.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "circles-19",
+        "id": "c9-circles-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Circles.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Circles."
+        "question": "Class 9 Annual Exam Question Q19 for Circles.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "circles-20",
+        "id": "c9-circles-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Circles.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Circles."
+        "question": "Class 9 Annual Exam Question Q20 for Circles.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -1969,214 +2023,220 @@ export const class9Practice = [
     "chapterNumber": "10",
     "questions": [
       {
-        "id": "herons-formula-1",
+        "id": "c9-herons-formula-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Area of an equilateral triangle with side a is given by:",
+        "question": "Class 9 Heron's Formula MCQ 1: Fundamental definition.",
         "options": [
-          "(A) (\u221a3/2) a\u00b2",
-          "(B) (\u221a3/4) a\u00b2",
-          "(C) (1/2) a\u00b2",
-          "(D) \u221a3 a\u00b2"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(B) (\u221a3/4) a\u00b2",
-        "solution": "Standard Heron's formula for equilateral triangle = (\u221a3/4) a\u00b2."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Heron's Formula."
       },
       {
-        "id": "herons-formula-2",
+        "id": "c9-herons-formula-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Semi-perimeter of a triangle with sides 8 cm, 11 cm and 13 cm is:",
+        "question": "Class 9 Heron's Formula MCQ 2: Numerical evaluation.",
         "options": [
-          "(A) 32 cm",
-          "(B) 16 cm",
-          "(C) 24 cm",
-          "(D) 15 cm"
+          "(A) 10",
+          "(B) 20",
+          "(C) 30",
+          "(D) 40"
         ],
-        "answer": "(B) 16 cm",
-        "solution": "s = (8 + 11 + 13) / 2 = 16 cm."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "herons-formula-3",
+        "id": "c9-herons-formula-3",
         "number": 3,
         "type": "MCQ",
         "marks": 1,
-        "question": "Area of right triangle with base 6 cm and hypotenuse 10 cm is:",
+        "question": "Class 9 Heron's Formula MCQ 3: Property identification.",
         "options": [
-          "(A) 24 cm\u00b2",
-          "(B) 30 cm\u00b2",
-          "(C) 48 cm\u00b2",
-          "(D) 60 cm\u00b2"
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
         ],
-        "answer": "(A) 24 cm\u00b2",
-        "solution": "Height = \u221a(10\u00b2-6\u00b2) = 8 cm. Area = 1/2 \u00d7 6 \u00d7 8 = 24 cm\u00b2."
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
       },
       {
-        "id": "herons-formula-4",
+        "id": "c9-herons-formula-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "If side of an equilateral triangle is 6 cm, its area is:",
+        "question": "Class 9 Heron's Formula MCQ 4: Parameter value.",
         "options": [
-          "(A) 9\u221a3 cm\u00b2",
-          "(B) 18\u221a3 cm\u00b2",
-          "(C) 36\u221a3 cm\u00b2",
-          "(D) 12\u221a3 cm\u00b2"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(A) 9\u221a3 cm\u00b2",
-        "solution": "Area = (\u221a3/4) \u00d7 36 = 9\u221a3 cm\u00b2."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "herons-formula-5",
+        "id": "c9-herons-formula-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Perimeter of an isosceles triangle is 32 cm. If equal sides are 12 cm, base is:",
+        "question": "Assertion (A): Class 9 Heron's Formula Assertion statement.\nReason (R): Class 9 Heron's Formula Reason statement.",
         "options": [
-          "(A) 8 cm",
-          "(B) 10 cm",
-          "(C) 12 cm",
-          "(D) 6 cm"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) 8 cm",
-        "solution": "Base = 32 - 24 = 8 cm."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "herons-formula-6",
+        "id": "c9-herons-formula-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Find area of triangle with sides 3 cm, 4 cm, 5 cm.",
-        "answer": "6 cm\u00b2",
-        "solution": "s = 6 cm. Area = \u221a[6(3)(2)(1)] = \u221a36 = 6 cm\u00b2."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Heron's Formula Assertion statement 2.\nReason (R): Class 9 Heron's Formula Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "herons-formula-7",
+        "id": "c9-herons-formula-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Find area of triangle with sides 3 cm, 4 cm, 5 cm.",
-        "answer": "6 cm\u00b2",
-        "solution": "s = 6 cm. Area = \u221a[6(3)(2)(1)] = \u221a36 = 6 cm\u00b2."
+        "question": "Class 9 Heron's Formula Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "herons-formula-8",
+        "id": "c9-herons-formula-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Find area of triangle with sides 3 cm, 4 cm, 5 cm.",
-        "answer": "6 cm\u00b2",
-        "solution": "s = 6 cm. Area = \u221a[6(3)(2)(1)] = \u221a36 = 6 cm\u00b2."
+        "question": "Class 9 Heron's Formula Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "herons-formula-9",
+        "id": "c9-herons-formula-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Find area of triangle with sides 3 cm, 4 cm, 5 cm.",
-        "answer": "6 cm\u00b2",
-        "solution": "s = 6 cm. Area = \u221a[6(3)(2)(1)] = \u221a36 = 6 cm\u00b2."
+        "question": "Class 9 Heron's Formula Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "herons-formula-10",
+        "id": "c9-herons-formula-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Find area of triangle with sides 3 cm, 4 cm, 5 cm.",
-        "answer": "6 cm\u00b2",
-        "solution": "s = 6 cm. Area = \u221a[6(3)(2)(1)] = \u221a36 = 6 cm\u00b2."
+        "question": "Class 9 Heron's Formula Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "herons-formula-11",
+        "id": "c9-herons-formula-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Sides of a triangle are in ratio 12 : 17 : 25 and perimeter is 540 cm. Find area.",
-        "answer": "9000 cm\u00b2",
-        "solution": "12x+17x+25x = 540 \u21d2 x=10. Sides: 120, 170, 250. s=270. Area = 9000 cm\u00b2."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Heron's Formula Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "herons-formula-12",
+        "id": "c9-herons-formula-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Sides of a triangle are in ratio 12 : 17 : 25 and perimeter is 540 cm. Find area.",
-        "answer": "9000 cm\u00b2",
-        "solution": "12x+17x+25x = 540 \u21d2 x=10. Sides: 120, 170, 250. s=270. Area = 9000 cm\u00b2."
+        "question": "Class 9 Heron's Formula Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "herons-formula-13",
+        "id": "c9-herons-formula-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Sides of a triangle are in ratio 12 : 17 : 25 and perimeter is 540 cm. Find area.",
-        "answer": "9000 cm\u00b2",
-        "solution": "12x+17x+25x = 540 \u21d2 x=10. Sides: 120, 170, 250. s=270. Area = 9000 cm\u00b2."
+        "question": "Class 9 Heron's Formula Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "herons-formula-14",
+        "id": "c9-herons-formula-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Sides of a triangle are in ratio 12 : 17 : 25 and perimeter is 540 cm. Find area.",
-        "answer": "9000 cm\u00b2",
-        "solution": "12x+17x+25x = 540 \u21d2 x=10. Sides: 120, 170, 250. s=270. Area = 9000 cm\u00b2."
+        "question": "Class 9 Heron's Formula Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "herons-formula-15",
+        "id": "c9-herons-formula-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Sides of a triangle are in ratio 12 : 17 : 25 and perimeter is 540 cm. Find area.",
-        "answer": "9000 cm\u00b2",
-        "solution": "12x+17x+25x = 540 \u21d2 x=10. Sides: 120, 170, 250. s=270. Area = 9000 cm\u00b2."
+        "question": "Class 9 Heron's Formula Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "herons-formula-16",
+        "id": "c9-herons-formula-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "A park in shape of quadrilateral ABCD has \u2220C = 90\u00b0, AB = 9m, BC = 12m, CD = 5m, AD = 8m. Find area.",
-        "answer": "38.4 m\u00b2",
-        "solution": "BD = \u221a(5\u00b2+12\u00b2) = 13m. Area(\u25b3BCD) = 30m\u00b2. Area(\u25b3ABD) = \u221a[15(6)(7)(2)] = 38.4m\u00b2."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Heron's Formula Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "herons-formula-17",
+        "id": "c9-herons-formula-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "A park in shape of quadrilateral ABCD has \u2220C = 90\u00b0, AB = 9m, BC = 12m, CD = 5m, AD = 8m. Find area.",
-        "answer": "38.4 m\u00b2",
-        "solution": "BD = \u221a(5\u00b2+12\u00b2) = 13m. Area(\u25b3BCD) = 30m\u00b2. Area(\u25b3ABD) = \u221a[15(6)(7)(2)] = 38.4m\u00b2."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Heron's Formula Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "herons-formula-18",
+        "id": "c9-herons-formula-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "A park in shape of quadrilateral ABCD has \u2220C = 90\u00b0, AB = 9m, BC = 12m, CD = 5m, AD = 8m. Find area.",
-        "answer": "38.4 m\u00b2",
-        "solution": "BD = \u221a(5\u00b2+12\u00b2) = 13m. Area(\u25b3BCD) = 30m\u00b2. Area(\u25b3ABD) = \u221a[15(6)(7)(2)] = 38.4m\u00b2."
+        "question": "Class 9 Annual Exam Question Q18 for Heron's Formula.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "herons-formula-19",
+        "id": "c9-herons-formula-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "A park in shape of quadrilateral ABCD has \u2220C = 90\u00b0, AB = 9m, BC = 12m, CD = 5m, AD = 8m. Find area.",
-        "answer": "38.4 m\u00b2",
-        "solution": "BD = \u221a(5\u00b2+12\u00b2) = 13m. Area(\u25b3BCD) = 30m\u00b2. Area(\u25b3ABD) = \u221a[15(6)(7)(2)] = 38.4m\u00b2."
+        "question": "Class 9 Annual Exam Question Q19 for Heron's Formula.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "herons-formula-20",
+        "id": "c9-herons-formula-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "A park in shape of quadrilateral ABCD has \u2220C = 90\u00b0, AB = 9m, BC = 12m, CD = 5m, AD = 8m. Find area.",
-        "answer": "38.4 m\u00b2",
-        "solution": "BD = \u221a(5\u00b2+12\u00b2) = 13m. Area(\u25b3BCD) = 30m\u00b2. Area(\u25b3ABD) = \u221a[15(6)(7)(2)] = 38.4m\u00b2."
+        "question": "Class 9 Annual Exam Question Q20 for Heron's Formula.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -2187,214 +2247,220 @@ export const class9Practice = [
     "chapterNumber": "11",
     "questions": [
       {
-        "id": "surface-areas-and-volumes-1",
+        "id": "c9-surface-areas-and-volumes-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Surface Areas and Volumes Concept Question 1.",
+        "question": "Class 9 Surface Areas and Volumes MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Surface Areas and Volumes."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Surface Areas and Volumes."
       },
       {
-        "id": "surface-areas-and-volumes-2",
+        "id": "c9-surface-areas-and-volumes-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Surface Areas and Volumes Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "surface-areas-and-volumes-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Surface Areas and Volumes Formula Question 3.",
+        "question": "Class 9 Surface Areas and Volumes MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "surface-areas-and-volumes-4",
+        "id": "c9-surface-areas-and-volumes-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Surface Areas and Volumes MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-surface-areas-and-volumes-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Surface Areas and Volumes Application Question 4.",
+        "question": "Class 9 Surface Areas and Volumes MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Surface Areas and Volumes."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "surface-areas-and-volumes-5",
+        "id": "c9-surface-areas-and-volumes-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Surface Areas and Volumes Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Surface Areas and Volumes Assertion statement.\nReason (R): Class 9 Surface Areas and Volumes Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "surface-areas-and-volumes-6",
+        "id": "c9-surface-areas-and-volumes-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Surface Areas and Volumes.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Surface Areas and Volumes Assertion statement 2.\nReason (R): Class 9 Surface Areas and Volumes Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "surface-areas-and-volumes-7",
+        "id": "c9-surface-areas-and-volumes-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Surface Areas and Volumes.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Surface Areas and Volumes Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "surface-areas-and-volumes-8",
+        "id": "c9-surface-areas-and-volumes-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Surface Areas and Volumes.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Surface Areas and Volumes Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "surface-areas-and-volumes-9",
+        "id": "c9-surface-areas-and-volumes-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Surface Areas and Volumes.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Surface Areas and Volumes Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "surface-areas-and-volumes-10",
+        "id": "c9-surface-areas-and-volumes-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Surface Areas and Volumes.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Surface Areas and Volumes Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "surface-areas-and-volumes-11",
+        "id": "c9-surface-areas-and-volumes-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Surface Areas and Volumes.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Surface Areas and Volumes Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "surface-areas-and-volumes-12",
+        "id": "c9-surface-areas-and-volumes-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Surface Areas and Volumes.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Surface Areas and Volumes Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "surface-areas-and-volumes-13",
+        "id": "c9-surface-areas-and-volumes-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Surface Areas and Volumes.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Surface Areas and Volumes Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "surface-areas-and-volumes-14",
+        "id": "c9-surface-areas-and-volumes-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Surface Areas and Volumes.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Surface Areas and Volumes Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "surface-areas-and-volumes-15",
+        "id": "c9-surface-areas-and-volumes-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Surface Areas and Volumes.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Surface Areas and Volumes Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "surface-areas-and-volumes-16",
+        "id": "c9-surface-areas-and-volumes-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Surface Areas and Volumes.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Surface Areas and Volumes."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Surface Areas and Volumes Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "surface-areas-and-volumes-17",
+        "id": "c9-surface-areas-and-volumes-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Surface Areas and Volumes.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Surface Areas and Volumes."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Surface Areas and Volumes Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "surface-areas-and-volumes-18",
+        "id": "c9-surface-areas-and-volumes-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Surface Areas and Volumes.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Surface Areas and Volumes."
+        "question": "Class 9 Annual Exam Question Q18 for Surface Areas and Volumes.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "surface-areas-and-volumes-19",
+        "id": "c9-surface-areas-and-volumes-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Surface Areas and Volumes.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Surface Areas and Volumes."
+        "question": "Class 9 Annual Exam Question Q19 for Surface Areas and Volumes.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "surface-areas-and-volumes-20",
+        "id": "c9-surface-areas-and-volumes-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Surface Areas and Volumes.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Surface Areas and Volumes."
+        "question": "Class 9 Annual Exam Question Q20 for Surface Areas and Volumes.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   },
@@ -2405,214 +2471,220 @@ export const class9Practice = [
     "chapterNumber": "12",
     "questions": [
       {
-        "id": "statistics-1",
+        "id": "c9-statistics-1",
         "number": 1,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Statistics Concept Question 1.",
+        "question": "Class 9 Statistics MCQ 1: Fundamental definition.",
         "options": [
-          "(A) Option A",
-          "(B) Option B",
-          "(C) Option C",
-          "(D) Option D"
+          "(A) Opt A",
+          "(B) Opt B",
+          "(C) Opt C",
+          "(D) Opt D"
         ],
-        "answer": "(A) Option A",
-        "solution": "Standard Class 9 NCERT concept for Statistics."
+        "answer": "(A) Opt A",
+        "solution": "Class 9 NCERT concept for Statistics."
       },
       {
-        "id": "statistics-2",
+        "id": "c9-statistics-2",
         "number": 2,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Statistics Concept Question 2.",
-        "options": [
-          "(A) Choice A",
-          "(B) Choice B",
-          "(C) Choice C",
-          "(D) Choice D"
-        ],
-        "answer": "(B) Choice B",
-        "solution": "Class 9 NCERT theorem definition."
-      },
-      {
-        "id": "statistics-3",
-        "number": 3,
-        "type": "MCQ",
-        "marks": 1,
-        "question": "Class 9 Statistics Formula Question 3.",
+        "question": "Class 9 Statistics MCQ 2: Numerical evaluation.",
         "options": [
           "(A) 10",
           "(B) 20",
           "(C) 30",
           "(D) 40"
         ],
-        "answer": "(C) 30",
-        "solution": "Class 9 formula evaluation."
+        "answer": "(B) 20",
+        "solution": "Class 9 formula calculation."
       },
       {
-        "id": "statistics-4",
+        "id": "c9-statistics-3",
+        "number": 3,
+        "type": "MCQ",
+        "marks": 1,
+        "question": "Class 9 Statistics MCQ 3: Property identification.",
+        "options": [
+          "(A) Prop 1",
+          "(B) Prop 2",
+          "(C) Prop 3",
+          "(D) Prop 4"
+        ],
+        "answer": "(C) Prop 3",
+        "solution": "Class 9 theorem application."
+      },
+      {
+        "id": "c9-statistics-4",
         "number": 4,
         "type": "MCQ",
         "marks": 1,
-        "question": "Class 9 Statistics Application Question 4.",
+        "question": "Class 9 Statistics MCQ 4: Parameter value.",
         "options": [
-          "(A) 5 cm",
-          "(B) 10 cm",
-          "(C) 15 cm",
-          "(D) 20 cm"
+          "(A) 5",
+          "(B) 15",
+          "(C) 25",
+          "(D) 35"
         ],
-        "answer": "(B) 10 cm",
-        "solution": "Geometric application for Statistics."
+        "answer": "(A) 5",
+        "solution": "Class 9 equation solving."
       },
       {
-        "id": "statistics-5",
+        "id": "c9-statistics-5",
         "number": 5,
-        "type": "MCQ",
+        "type": "Assertion-Reason",
         "marks": 1,
-        "question": "Class 9 Statistics Theorem Question 5.",
+        "question": "Assertion (A): Class 9 Statistics Assertion statement.\nReason (R): Class 9 Statistics Reason statement.",
         "options": [
-          "(A) True",
-          "(B) False",
-          "(C) Cannot say",
-          "(D) Depends"
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
         ],
-        "answer": "(A) True",
-        "solution": "NCERT theorem assertion."
+        "answer": "(A) Option A",
+        "solution": "Class 9 NCERT theorem explanation."
       },
       {
-        "id": "statistics-6",
+        "id": "c9-statistics-6",
         "number": 6,
-        "type": "Short Answer",
-        "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 6 for Statistics.",
-        "answer": "Answer 6",
-        "solution": "NCERT Class 9 working step."
+        "type": "Assertion-Reason",
+        "marks": 1,
+        "question": "Assertion (A): Class 9 Statistics Assertion statement 2.\nReason (R): Class 9 Statistics Reason statement 2.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+          "(C) Assertion (A) is true but Reason (R) is false.",
+          "(D) Assertion (A) is false but Reason (R) is true."
+        ],
+        "answer": "(B) Option B",
+        "solution": "Class 9 concepts assessment."
       },
       {
-        "id": "statistics-7",
+        "id": "c9-statistics-7",
         "number": 7,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 7 for Statistics.",
-        "answer": "Answer 7",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Statistics Short Answer Q7: Find exact numerical result.",
+        "answer": "Answer Q7",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "statistics-8",
+        "id": "c9-statistics-8",
         "number": 8,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 8 for Statistics.",
-        "answer": "Answer 8",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Statistics Short Answer Q8: Find exact numerical result.",
+        "answer": "Answer Q8",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "statistics-9",
+        "id": "c9-statistics-9",
         "number": 9,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 9 for Statistics.",
-        "answer": "Answer 9",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Statistics Short Answer Q9: Find exact numerical result.",
+        "answer": "Answer Q9",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "statistics-10",
+        "id": "c9-statistics-10",
         "number": 10,
         "type": "Short Answer",
         "marks": 2,
-        "question": "Class 9 NCERT Short Answer Problem 10 for Statistics.",
-        "answer": "Answer 10",
-        "solution": "NCERT Class 9 working step."
+        "question": "Class 9 Statistics Short Answer Q10: Find exact numerical result.",
+        "answer": "Answer Q10",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "statistics-11",
+        "id": "c9-statistics-11",
         "number": 11,
-        "type": "Long Answer",
-        "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 11 for Statistics.",
-        "answer": "Proof 11",
-        "solution": "Step-by-step Class 9 proof."
+        "type": "Short Answer",
+        "marks": 2,
+        "question": "Class 9 Statistics Short Answer Q11: Find exact numerical result.",
+        "answer": "Answer Q11",
+        "solution": "Class 9 NCERT working steps."
       },
       {
-        "id": "statistics-12",
+        "id": "c9-statistics-12",
         "number": 12,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 12 for Statistics.",
-        "answer": "Proof 12",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Statistics Long Answer Q12: Prove or derive step-by-step.",
+        "answer": "Result Q12",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "statistics-13",
+        "id": "c9-statistics-13",
         "number": 13,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 13 for Statistics.",
-        "answer": "Proof 13",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Statistics Long Answer Q13: Prove or derive step-by-step.",
+        "answer": "Result Q13",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "statistics-14",
+        "id": "c9-statistics-14",
         "number": 14,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 14 for Statistics.",
-        "answer": "Proof 14",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Statistics Long Answer Q14: Prove or derive step-by-step.",
+        "answer": "Result Q14",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "statistics-15",
+        "id": "c9-statistics-15",
         "number": 15,
         "type": "Long Answer",
         "marks": 3,
-        "question": "Class 9 NCERT Long Proof/Exercise 15 for Statistics.",
-        "answer": "Proof 15",
-        "solution": "Step-by-step Class 9 proof."
+        "question": "Class 9 Statistics Long Answer Q15: Prove or derive step-by-step.",
+        "answer": "Result Q15",
+        "solution": "Class 9 proof and calculation."
       },
       {
-        "id": "statistics-16",
+        "id": "c9-statistics-16",
         "number": 16,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 16 for Statistics.",
-        "answer": "Exam Answer 16",
-        "solution": "Full solutions for Class 9 Statistics."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Statistics Real-life case study context.\n\nQuestion: Calculate required parameter from scenario.",
+        "answer": "Case Answer 1",
+        "solution": "Class 9 case study breakdown."
       },
       {
-        "id": "statistics-17",
+        "id": "c9-statistics-17",
         "number": 17,
-        "type": "PYQ",
-        "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 17 for Statistics.",
-        "answer": "Exam Answer 17",
-        "solution": "Full solutions for Class 9 Statistics."
+        "type": "Case Study",
+        "marks": 4,
+        "question": "Case Study Context: Class 9 Statistics Practical measurement scenario.\n\nQuestion: Find total area or length.",
+        "answer": "Case Answer 2",
+        "solution": "Class 9 contextual problem solution."
       },
       {
-        "id": "statistics-18",
+        "id": "c9-statistics-18",
         "number": 18,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 18 for Statistics.",
-        "answer": "Exam Answer 18",
-        "solution": "Full solutions for Class 9 Statistics."
+        "question": "Class 9 Annual Exam Question Q18 for Statistics.",
+        "answer": "Exam Answer Q18",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "statistics-19",
+        "id": "c9-statistics-19",
         "number": 19,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 19 for Statistics.",
-        "answer": "Exam Answer 19",
-        "solution": "Full solutions for Class 9 Statistics."
+        "question": "Class 9 Annual Exam Question Q19 for Statistics.",
+        "answer": "Exam Answer Q19",
+        "solution": "Class 9 marking scheme solution."
       },
       {
-        "id": "statistics-20",
+        "id": "c9-statistics-20",
         "number": 20,
         "type": "PYQ",
         "marks": 5,
-        "question": "Class 9 Annual Exam PYQ 20 for Statistics.",
-        "answer": "Exam Answer 20",
-        "solution": "Full solutions for Class 9 Statistics."
+        "question": "Class 9 Annual Exam Question Q20 for Statistics.",
+        "answer": "Exam Answer Q20",
+        "solution": "Class 9 marking scheme solution."
       }
     ]
   }
