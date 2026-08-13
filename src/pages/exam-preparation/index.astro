@@ -1,0 +1,447 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout
+  title="Exam Preparation | Class 9 & Class 10 Mathematics | The Concepts Adda"
+  description="Select your class for dedicated Mathematics exam preparation: Board PYQs, sample papers, case study masterclass, and formula cheat sheets."
+>
+  <main class="prep-landing-main">
+
+    <!-- NAVBAR -->
+    <header class="prep-navbar">
+      <div class="nav-container">
+        <a href="/" class="brand">
+          <img src="/logo.png" alt="The Concepts Adda" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">The Concepts Adda</div>
+            <div class="brand-tagline">Understand. Practice. Master.</div>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/classes">Classes</a>
+          <a href="/practice">Practice</a>
+          <a href="/exam-preparation" class="active">Exam Prep</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="prep-hero">
+      <div class="hero-container text-center">
+        <div class="breadcrumb">
+          <a href="/">← Home</a>
+          <span class="breadcrumb-dot"></span>
+          <span>EXAM PREPARATION</span>
+        </div>
+
+        <h1>
+          Select Your Class <br />
+          <span class="blue-text">For Exam Preparation</span>
+        </h1>
+        <p class="hero-desc">
+          Choose your class below to access chapter-wise Board PYQs, CBSE sample papers, case-study practice, and quick revision formula sheets.
+        </p>
+      </div>
+    </section>
+
+    <!-- CLASS SELECTION SECTION -->
+    <section class="class-selection-section">
+      <div class="section-container">
+        <div class="class-grid">
+
+          <!-- CLASS 9 OPTION CARD -->
+          <a href="/exam-preparation/class-9" class="class-card class-9-card">
+            <div class="card-top">
+              <div class="class-number">09</div>
+              <div class="class-badge blue-badge">CLASS 09</div>
+            </div>
+            <div class="card-content">
+              <h2>Class 9 Annual Exam Preparation</h2>
+              <p>
+                Complete preparation for Class 9 Mathematics Annual Examinations with chapter-wise practice, 80-mark model papers, and formula cheat sheets.
+              </p>
+              <div class="card-features">
+                <div class="feature-item">✓ 240+ NCERT & Annual Exam Questions</div>
+                <div class="feature-item">✓ 80-Mark Model Question Papers</div>
+                <div class="feature-item">✓ Geometry Theorems & Formula Bank</div>
+              </div>
+              <div class="card-btn blue-btn">
+                Select Class 9 Exam Prep →
+              </div>
+            </div>
+          </a>
+
+          <!-- CLASS 10 OPTION CARD -->
+          <a href="/exam-preparation/class-10" class="class-card class-10-card">
+            <div class="card-top">
+              <div class="class-number">10</div>
+              <div class="class-badge gold-badge">CLASS 10</div>
+            </div>
+            <div class="card-content">
+              <h2>Class 10 Board Exam Preparation</h2>
+              <p>
+                Score 100/100 in CBSE Class 10 Board Exams with official 10-year PYQs (2015-2024), Standard & Basic Sample Papers, and Case Study Masterclasses.
+              </p>
+              <div class="card-features">
+                <div class="feature-item">✓ 10-Year CBSE Board PYQs (2015-2024)</div>
+                <div class="feature-item">✓ CBSE Standard & Basic Sample Papers</div>
+                <div class="feature-item">✓ Case-Study & 5-Mark Proof Masterclass</div>
+              </div>
+              <div class="card-btn gold-btn">
+                Select Class 10 Board Prep →
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="The Concepts Adda" />
+        <div>
+          <strong>The Concepts Adda</strong>
+          <span>Understand. Practice. Master.</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/classes">Classes</a>
+        <a href="/practice">Practice</a>
+        <a href="/exam-preparation">Exam Prep</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © {new Date().getFullYear()} The Concepts Adda. All rights reserved.
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f8fafc;
+    color: #14213d;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+  }
+
+  .prep-landing-main {
+    min-height: 80vh;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  /* NAVBAR */
+  .prep-navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .nav-container {
+    width: min(1180px, calc(100% - 40px));
+    height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .brand-name {
+    font-size: 18px;
+    font-weight: 850;
+  }
+
+  .brand-tagline {
+    font-size: 11px;
+    color: #64748b;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #2563eb;
+  }
+
+  /* HERO */
+  .prep-hero {
+    padding: 70px 0 40px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .hero-container {
+    width: min(800px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb-dot {
+    width: 4px;
+    height: 4px;
+    background: #cbd5e1;
+    border-radius: 50%;
+  }
+
+  .prep-hero h1 {
+    font-size: 42px;
+    font-weight: 850;
+    color: #0f172a;
+    line-height: 1.25;
+    margin: 0 0 16px;
+  }
+
+  .blue-text {
+    color: #2563eb;
+  }
+
+  .hero-desc {
+    font-size: 18px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* CLASS SELECTION */
+  .class-selection-section {
+    padding: 70px 0;
+  }
+
+  .section-container {
+    width: min(1080px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .class-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .class-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .class-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 36px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .class-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+  }
+
+  .class-9-card:hover {
+    border-color: #3b82f6;
+  }
+
+  .class-10-card:hover {
+    border-color: #f59e0b;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .class-number {
+    font-size: 48px;
+    font-weight: 900;
+    color: #cbd5e1;
+    line-height: 1;
+  }
+
+  .class-badge {
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.5px;
+  }
+
+  .blue-badge {
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+
+  .gold-badge {
+    background: #fef3c7;
+    color: #b45309;
+  }
+
+  .card-content h2 {
+    font-size: 26px;
+    font-weight: 850;
+    color: #0f172a;
+    margin: 0 0 14px;
+  }
+
+  .card-content p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .feature-item {
+    font-size: 14px;
+    font-weight: 650;
+    color: #334155;
+  }
+
+  .card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+  }
+
+  .blue-btn {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  }
+
+  .gold-btn {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #0d172b;
+    color: white;
+    padding: 60px 0 25px;
+  }
+
+  .footer-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .footer-brand div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    color: white;
+  }
+
+  .footer-bottom {
+    width: min(1180px, calc(100% - 40px));
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: #64748b;
+  }
+</style>
