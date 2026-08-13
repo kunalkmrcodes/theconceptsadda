@@ -1,11 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { class10Practice } from "../../data/practiceClass10.js";
 import "../../styles/global.css";
 ---
 
 <Layout
-  title="Class 10 Board Exam Preparation | Mathematics | The Concepts Adda"
-  description="CBSE Class 10 Mathematics Board Examination Preparation: 10-Year Board PYQs (2015-2024), Standard & Basic Sample Papers, and Case Study Masterclass."
+  title="Class 10 CBSE Most Repeated PYQs | Board Exam Preparation | The Concepts Adda"
+  description="CBSE Class 10 Mathematics Board Exam Preparation Hub: Solved 10-Year Board PYQs (2015-2024) for every chapter with step-by-step solutions."
 >
   <main class="prep-class-main">
 
@@ -37,91 +38,45 @@ import "../../styles/global.css";
           <span class="breadcrumb-dot"></span>
           <a href="/exam-preparation">Exam Preparation</a>
           <span class="breadcrumb-dot"></span>
-          <span>CLASS 10</span>
+          <span>CLASS 10 BOARD PYQS</span>
         </div>
 
-        <div class="class-pill gold">CLASS 10 BOARD PREPARATION</div>
+        <div class="class-pill gold">CLASS 10 BOARD EXAM HUB</div>
         <h1>
-          Score 100/100 in Board Exams <br />
-          <span class="gold-text">CBSE 2024-25 Question Bank</span>
+          CBSE Most Repeated PYQs <br />
+          <span class="gold-text">Chapter-Wise Board Question Bank</span>
         </h1>
         <p class="hero-desc">
-          Official 10-Year Board Previous Year Questions (2015-2024), full-length Standard & Basic Sample Papers, and Case Study competency masterclasses.
+          Select any chapter below to practice official CBSE Previous Year Board Questions (2015-2024) categorized by marks, step-by-step solutions, and marking schemes.
         </p>
       </div>
     </section>
 
-    <!-- PREP MODULES -->
+    <!-- CHAPTER PYQS GRID SECTION -->
     <section class="modules-section">
       <div class="section-container">
 
-        <!-- MODULE 1: BOARD PYQS BY WEIGHTAGE -->
         <div class="module-card featured-gold">
           <div class="module-header">
             <span class="module-icon">🏆</span>
             <div>
-              <span class="module-tag gold">HIGH WEIGHTAGE</span>
-              <h2>Class 10 Board PYQs by Chapter Weightage</h2>
+              <span class="module-tag gold">CBSE BOARD PYQS (2015-2024)</span>
+              <h2>Select a Chapter to Solve Most Repeated Board PYQs</h2>
             </div>
           </div>
-          <p>Official CBSE Board Questions categorized by marks (1-Mark MCQs, 2-Mark SA, 3-Mark LA, 5-Mark Proofs & Case Studies) with step-by-step solutions.</p>
+          <p>Click on any chapter below to access solved 1-Mark MCQs, 2-Mark Short Answer, 3-Mark Long Answer, 5-Mark Proofs & Section E Case Studies.</p>
 
           <div class="chapters-grid">
-            <a href="/practice/class-10/trigonometry" class="chapter-badge gold-border">08 & 09. Trigonometry (12 Marks)</a>
-            <a href="/practice/class-10/triangles" class="chapter-badge gold-border">06. Triangles (10 Marks)</a>
-            <a href="/practice/class-10/linear-equations" class="chapter-badge gold-border">03. Linear Equations (8 Marks)</a>
-            <a href="/practice/class-10/quadratic-equations" class="chapter-badge gold-border">04. Quadratic Equations (7 Marks)</a>
-            <a href="/practice/class-10/statistics" class="chapter-badge gold-border">13. Statistics (7 Marks)</a>
-            <a href="/practice/class-10/surface-areas-and-volumes" class="chapter-badge gold-border">12. Surface Areas (6 Marks)</a>
-            <a href="/practice/class-10/real-numbers" class="chapter-badge gold-border">01. Real Numbers (6 Marks)</a>
-            <a href="/practice/class-10/coordinate-geometry" class="chapter-badge gold-border">07. Coordinate Geometry (6 Marks)</a>
-            <a href="/practice/class-10/circles" class="chapter-badge gold-border">10. Circles (6 Marks)</a>
-            <a href="/practice/class-10/arithmetic-progressions" class="chapter-badge gold-border">05. Arithmetic Progressions (5 Marks)</a>
-            <a href="/practice/class-10/probability" class="chapter-badge gold-border">14. Probability (4 Marks)</a>
-            <a href="/practice/class-10/polynomials" class="chapter-badge gold-border">02. Polynomials (4 Marks)</a>
-          </div>
-
-          <a href="/practice/class-10" class="module-btn gold">
-            Solve All Class 10 Board Sets →
-          </a>
-        </div>
-
-        <!-- MODULE 2: SAMPLE PAPERS & CASE STUDY MASTERCLASS -->
-        <div class="two-col-grid">
-          <!-- CARD 2A -->
-          <div class="module-card">
-            <div class="module-header">
-              <span class="module-icon">📑</span>
-              <div>
-                <span class="module-tag">CBSE PATTERN 2024-25</span>
-                <h3>CBSE Class 10 Board Sample Papers</h3>
-              </div>
-            </div>
-            <p>Full 80-Mark Sample Question Papers (Standard & Basic Math) strictly formatted according to official CBSE blueprint.</p>
-            <ul class="feature-list">
-              <li>✓ Standard Mathematics Practice Paper (80 Marks)</li>
-              <li>✓ Basic Mathematics Practice Paper (80 Marks)</li>
-              <li>✓ Step-by-Step Marking Scheme & Solutions</li>
-            </ul>
-            <a href="/practice/class-10" class="module-btn">Start Sample Paper →</a>
-          </div>
-
-          <!-- CARD 2B -->
-          <div class="module-card">
-            <div class="module-header">
-              <span class="module-icon">⚡</span>
-              <div>
-                <span class="module-tag">COMPETENCY BASED</span>
-                <h3>Case Study & 5-Mark Masterclass</h3>
-              </div>
-            </div>
-            <p>Target Section E Case-Study Questions (12 Marks) and Section D 5-Mark Theorem Proofs (20 Marks) to secure 100/100.</p>
-            <ul class="feature-list">
-              <li>✓ Trigonometry Height & Distance Case Studies</li>
-              <li>✓ Coordinate Geometry Seating Grid Problems</li>
-              <li>✓ Circles Tangent Theorem Proofs</li>
-            </ul>
-            <a href="/practice/class-10" class="module-btn">Start Case Study Practice →</a>
+            {class10Practice.map((chap) => (
+              <a href={`/exam-preparation/class-10/${chap.id}`} class="chapter-card-link">
+                <div class="chap-card-top">
+                  <span class="chap-num">Ch {chap.chapterNumber}</span>
+                  <span class="pyq-badge">CBSE PYQs</span>
+                </div>
+                <h3>{chap.title}</h3>
+                <span class="open-link-text">Solve Most Repeated PYQs →</span>
+              </a>
+            ))}
           </div>
         </div>
 
@@ -225,9 +180,8 @@ import "../../styles/global.css";
     font-weight: 650;
   }
 
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: #2563eb;
+  .nav-links a:hover, .nav-links a.active {
+    color: #d97706;
   }
 
   /* HERO */
@@ -306,9 +260,6 @@ import "../../styles/global.css";
   .section-container {
     width: min(1080px, calc(100% - 40px));
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
   }
 
   .module-card {
@@ -345,7 +296,6 @@ import "../../styles/global.css";
     font-weight: 850;
     color: #64748b;
     letter-spacing: 0.6px;
-
     display: block;
     margin-bottom: 4px;
   }
@@ -354,7 +304,7 @@ import "../../styles/global.css";
     color: #b45309;
   }
 
-  .module-header h2, .module-header h3 {
+  .module-header h2 {
     font-size: 22px;
     font-weight: 800;
     color: #0f172a;
@@ -365,92 +315,85 @@ import "../../styles/global.css";
     font-size: 15px;
     color: #475569;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 
   .chapters-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 28px;
+    gap: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    .chapters-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
     .chapters-grid {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  .chapter-badge {
-    padding: 12px 16px;
+  .chapter-card-link {
     background: #ffffff;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
-    font-size: 13.5px;
-    font-weight: 750;
-    color: #1e293b;
+    border: 1.5px solid #fcd34d;
+    border-radius: 16px;
+    padding: 20px;
     text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .chapter-badge.gold-border {
-    border-color: #fcd34d;
-  }
-
-  .chapter-badge:hover {
-    border-color: #d97706;
-    color: #d97706;
-    background: #fef3c7;
-    transform: translateY(-2px);
-  }
-
-  .two-col-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-
-  @media (max-width: 768px) {
-    .two-col-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px;
-  }
-
-  .feature-list li {
-    font-size: 14px;
-    font-weight: 650;
-    color: #334155;
-    margin-bottom: 10px;
-  }
-
-  .module-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 24px;
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 750;
-    border-radius: 12px;
-    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   }
 
-  .module-btn:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+  .chapter-card-link:hover {
+    transform: translateY(-4px);
+    border-color: #d97706;
+    box-shadow: 0 10px 24px rgba(217, 119, 6, 0.15);
+    background: #fffbe6;
   }
 
-  .module-btn.gold {
-    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
-    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+  .chap-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .chap-num {
+    font-size: 12px;
+    font-weight: 800;
+    color: #92400e;
+    background: #fef3c7;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .pyq-badge {
+    font-size: 11px;
+    font-weight: 850;
+    color: #059669;
+    background: #ecfdf5;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .chapter-card-link h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 14px;
+    line-height: 1.35;
+  }
+
+  .open-link-text {
+    font-size: 13px;
+    font-weight: 750;
+    color: #d97706;
   }
 
   /* FOOTER */

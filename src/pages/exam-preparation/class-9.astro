@@ -1,11 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { class9Practice } from "../../data/practiceClass9.js";
 import "../../styles/global.css";
 ---
 
 <Layout
-  title="Class 9 Annual Exam Preparation | Mathematics | The Concepts Adda"
-  description="Class 9 Mathematics Annual Examination Preparation: Chapter-wise practice sets, 80-mark model papers, and formula cheat sheets."
+  title="Class 9 CBSE & Annual Exam Most Repeated PYQs | The Concepts Adda"
+  description="Class 9 Mathematics Annual Examination Preparation Hub: Solved Annual Exam PYQs & CBSE Pattern Questions for every chapter."
 >
   <main class="prep-class-main">
 
@@ -30,98 +31,52 @@ import "../../styles/global.css";
     </header>
 
     <!-- HERO -->
-    <section class="class-prep-hero">
+    <section class="class-prep-hero blue-theme">
       <div class="hero-container text-center">
         <div class="breadcrumb">
           <a href="/">Home</a>
           <span class="breadcrumb-dot"></span>
           <a href="/exam-preparation">Exam Preparation</a>
           <span class="breadcrumb-dot"></span>
-          <span>CLASS 09</span>
+          <span>CLASS 09 ANNUAL PYQS</span>
         </div>
 
-        <div class="class-pill blue">CLASS 09 MATHEMATICS</div>
+        <div class="class-pill blue">CLASS 09 ANNUAL EXAM HUB</div>
         <h1>
-          Annual Exam Preparation <br />
-          <span class="blue-text">& Question Bank</span>
+          CBSE & Annual Most Repeated PYQs <br />
+          <span class="blue-text">Chapter-Wise Question Bank</span>
         </h1>
         <p class="hero-desc">
-          Master all 12 chapters with 240+ curated NCERT & Annual Exam practice problems, 80-mark sample question papers, and quick formula cheat sheets.
+          Select any chapter below to practice official Class 9 Annual Examination Questions & CBSE Pattern PYQs categorized by marks, step-by-step solutions, and marking schemes.
         </p>
       </div>
     </section>
 
-    <!-- PREP MODULES -->
+    <!-- CHAPTER PYQS GRID SECTION -->
     <section class="modules-section">
       <div class="section-container">
 
-        <!-- MODULE 1: CHAPTER PRACTICE SETS -->
         <div class="module-card featured-blue">
           <div class="module-header">
             <span class="module-icon">📘</span>
             <div>
-              <span class="module-tag blue">CHAPTER-WISE PRACTICE</span>
-              <h2>Class 9 Chapter-Wise Question Bank</h2>
+              <span class="module-tag blue">CLASS 09 ANNUAL EXAM PYQS</span>
+              <h2>Select a Chapter to Solve Most Repeated Annual PYQs</h2>
             </div>
           </div>
-          <p>Each chapter includes 20 hand-crafted problems: 6 MCQs, 2 Short Answer, 1 Case Study & 3 Board PYQs with step-by-step solutions.</p>
+          <p>Click on any chapter below to access solved 1-Mark MCQs, 2-Mark Short Answer, 3-Mark Long Answer, Geometry Proofs & Section E Case Studies.</p>
 
           <div class="chapters-grid">
-            <a href="/practice/class-9/number-systems" class="chapter-badge">01. Number Systems</a>
-            <a href="/practice/class-9/polynomials" class="chapter-badge">02. Polynomials</a>
-            <a href="/practice/class-9/coordinate-geometry" class="chapter-badge">03. Coordinate Geometry</a>
-            <a href="/practice/class-9/linear-equations" class="chapter-badge">04. Linear Equations</a>
-            <a href="/practice/class-9/euclids-geometry" class="chapter-badge">05. Euclid's Geometry</a>
-            <a href="/practice/class-9/lines-and-angles" class="chapter-badge">06. Lines and Angles</a>
-            <a href="/practice/class-9/triangles" class="chapter-badge">07. Triangles</a>
-            <a href="/practice/class-9/quadrilaterals" class="chapter-badge">08. Quadrilaterals</a>
-            <a href="/practice/class-9/circles" class="chapter-badge">09. Circles</a>
-            <a href="/practice/class-9/herons-formula" class="chapter-badge">10. Heron's Formula</a>
-            <a href="/practice/class-9/surface-areas-and-volumes" class="chapter-badge">11. Surface Areas & Volumes</a>
-            <a href="/practice/class-9/statistics" class="chapter-badge">12. Statistics</a>
-          </div>
-
-          <a href="/practice/class-9" class="module-btn blue">
-            Open All Class 9 Practice Sets →
-          </a>
-        </div>
-
-        <!-- MODULE 2: SAMPLE PAPERS & FORMULA SHEET -->
-        <div class="two-col-grid">
-          <!-- CARD 2A -->
-          <div class="module-card">
-            <div class="module-header">
-              <span class="module-icon">📝</span>
-              <div>
-                <span class="module-tag">ANNUAL MODEL PAPERS</span>
-                <h3>Final Term 80-Mark Sample Papers</h3>
-              </div>
-            </div>
-            <p>Designed strictly according to the latest CBSE 80-mark paper pattern (Sections A, B, C, D, E) with step-by-step marking schemes.</p>
-            <ul class="feature-list">
-              <li>✓ Annual Final Examination Paper 1 (80 Marks)</li>
-              <li>✓ Half-Yearly Revision Paper (80 Marks)</li>
-              <li>✓ Step-by-Step Marking Scheme</li>
-            </ul>
-            <a href="/practice/class-9" class="module-btn">Start Practice Paper →</a>
-          </div>
-
-          <!-- CARD 2B -->
-          <div class="module-card">
-            <div class="module-header">
-              <span class="module-icon">🧠</span>
-              <div>
-                <span class="module-tag">QUICK REVISION</span>
-                <h3>Geometry Proofs & Formula Cheat Sheet</h3>
-              </div>
-            </div>
-            <p>Summarized theorems and formulas for rapid last-minute revision before exam day.</p>
-            <ul class="feature-list">
-              <li>✓ Triangle Congruence Rules (SAS, SSS, ASA, RHS)</li>
-              <li>✓ Mid-Point Theorem & Parallelogram Proofs</li>
-              <li>✓ Heron's Formula & Cone/Sphere Surface Areas</li>
-            </ul>
-            <a href="/practice/class-9" class="module-btn">Open Formula Bank →</a>
+            {class9Practice.map((chap) => (
+              <a href={`/exam-preparation/class-9/${chap.id}`} class="chapter-card-link blue-border">
+                <div class="chap-card-top">
+                  <span class="chap-num blue">Ch {chap.chapterNumber}</span>
+                  <span class="pyq-badge blue">Annual PYQs</span>
+                </div>
+                <h3>{chap.title}</h3>
+                <span class="open-link-text blue">Solve Most Repeated PYQs →</span>
+              </a>
+            ))}
           </div>
         </div>
 
@@ -225,13 +180,12 @@ import "../../styles/global.css";
     font-weight: 650;
   }
 
-  .nav-links a:hover,
-  .nav-links a.active {
+  .nav-links a:hover, .nav-links a.active {
     color: #2563eb;
   }
 
   /* HERO */
-  .class-prep-hero {
+  .class-prep-hero.blue-theme {
     padding: 60px 0 40px;
     background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
     border-bottom: 1px solid #e2e8f0;
@@ -264,7 +218,9 @@ import "../../styles/global.css";
     border-radius: 50%;
   }
 
-  .class-pill {
+  .class-pill.blue {
+    background: #dbeafe;
+    color: #1d4ed8;
     display: inline-block;
     padding: 4px 14px;
     border-radius: 99px;
@@ -272,11 +228,6 @@ import "../../styles/global.css";
     font-weight: 850;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
-  }
-
-  .class-pill.blue {
-    background: #dbeafe;
-    color: #1d4ed8;
   }
 
   .class-prep-hero h1 {
@@ -306,9 +257,6 @@ import "../../styles/global.css";
   .section-container {
     width: min(1080px, calc(100% - 40px));
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
   }
 
   .module-card {
@@ -345,7 +293,6 @@ import "../../styles/global.css";
     font-weight: 850;
     color: #64748b;
     letter-spacing: 0.6px;
-
     display: block;
     margin-bottom: 4px;
   }
@@ -354,7 +301,7 @@ import "../../styles/global.css";
     color: #1d4ed8;
   }
 
-  .module-header h2, .module-header h3 {
+  .module-header h2 {
     font-size: 22px;
     font-weight: 800;
     color: #0f172a;
@@ -365,88 +312,90 @@ import "../../styles/global.css";
     font-size: 15px;
     color: #475569;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 
   .chapters-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 28px;
+    gap: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    .chapters-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
     .chapters-grid {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  .chapter-badge {
-    padding: 12px 16px;
+  .chapter-card-link {
     background: #ffffff;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
-    font-size: 13.5px;
-    font-weight: 750;
-    color: #1e293b;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 20px;
     text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .chapter-badge:hover {
-    border-color: #2563eb;
-    color: #2563eb;
-    background: #eff6ff;
-    transform: translateY(-2px);
-  }
-
-  .two-col-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-
-  @media (max-width: 768px) {
-    .two-col-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px;
-  }
-
-  .feature-list li {
-    font-size: 14px;
-    font-weight: 650;
-    color: #334155;
-    margin-bottom: 10px;
-  }
-
-  .module-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 24px;
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 750;
-    border-radius: 12px;
-    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   }
 
-  .module-btn:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+  .chapter-card-link.blue-border {
+    border-color: #93c5fd;
   }
 
-  .module-btn.blue {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  .chapter-card-link:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.15);
+    background: #eff6ff;
+  }
+
+  .chap-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .chap-num.blue {
+    font-size: 12px;
+    font-weight: 800;
+    color: #1d4ed8;
+    background: #dbeafe;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .pyq-badge.blue {
+    font-size: 11px;
+    font-weight: 850;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border: 1px solid #93c5fd;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .chapter-card-link h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 14px;
+    line-height: 1.35;
+  }
+
+  .open-link-text.blue {
+    font-size: 13px;
+    font-weight: 750;
+    color: #2563eb;
   }
 
   /* FOOTER */
