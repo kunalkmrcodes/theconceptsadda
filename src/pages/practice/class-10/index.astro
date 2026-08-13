@@ -1,0 +1,375 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { class10Practice } from "../../../data/practiceClass10.js";
+import "../../../styles/global.css";
+---
+
+<Layout
+  title="Class 10 Practice Questions | Select Chapter | The Concepts Adda"
+  description="Select a chapter from Class 10 Mathematics to solve 20 practice questions with step-by-step solutions."
+>
+  <main class="chap-select-main">
+
+    <!-- NAVBAR -->
+    <header class="practice-navbar">
+      <div class="nav-container">
+        <a href="/" class="brand">
+          <img src="/logo.png" alt="The Concepts Adda" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">The Concepts Adda</div>
+            <div class="brand-tagline">Understand. Practice. Master.</div>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/practice">Practice Home</a>
+          <a href="/practice/class-10" class="active">Class 10</a>
+          <a href="/practice/class-9">Class 9</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO HEADER -->
+    <section class="page-hero">
+      <div class="hero-container text-center">
+        <div class="breadcrumb">
+          <a href="/practice">← Change Class</a>
+          <span class="breadcrumb-dot"></span>
+          <span class="gold-text">CLASS 10 MATHEMATICS</span>
+        </div>
+
+        <h1>
+          Select a Chapter <br />
+          <span class="blue-text">Class 10 Practice Sets</span>
+        </h1>
+        <p class="hero-desc">
+          Choose any of the 14 chapters below to practice 20 curated NCERT & Board Exam questions with detailed solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- CHAPTERS GRID -->
+    <section class="chapters-grid-section">
+      <div class="section-container">
+        <div class="chapters-grid">
+          {class10Practice.map((chap) => (
+            <a href={`/practice/class-10/${chap.id}`} class="chap-card">
+              <div class="chap-header">
+                <span class="chap-badge">CHAPTER {chap.chapterNumber}</span>
+                <span class="q-count">20 Questions</span>
+              </div>
+              <h3>{chap.title}</h3>
+              <p class="chap-desc">
+                Solve MCQs, Short Answer, Long Answer, and Board Previous Year Questions (PYQs).
+              </p>
+              <div class="chap-link">
+                Start Practice →
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="The Concepts Adda" />
+        <div>
+          <strong>The Concepts Adda</strong>
+          <span>Understand. Practice. Master.</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/practice">Practice</a>
+        <a href="/practice/class-10">Class 10 Practice</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © {new Date().getFullYear()} The Concepts Adda. All rights reserved.
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f8fafc;
+    color: #14213d;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+  }
+
+  .chap-select-main {
+    min-height: 80vh;
+  }
+
+  .practice-navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .nav-container {
+    width: min(1180px, calc(100% - 40px));
+    height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .brand-name {
+    font-size: 18px;
+    font-weight: 850;
+  }
+
+  .brand-tagline {
+    font-size: 11px;
+    color: #64748b;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #2563eb;
+  }
+
+  .page-hero {
+    padding: 60px 0 35px;
+    background: radial-gradient(circle at 50% 0%, rgba(244, 196, 48, 0.1), transparent 50%);
+  }
+
+  .hero-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 750;
+    color: #64748b;
+    margin-bottom: 18px;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #cbd5e1;
+  }
+
+  .gold-text {
+    color: #d97706;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 850;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .blue-text {
+    color: #2563eb;
+  }
+
+  .hero-desc {
+    max-width: 620px;
+    margin: 16px auto 0;
+    font-size: 16px;
+    color: #64748b;
+  }
+
+  /* CHAPTERS GRID */
+  .chapters-grid-section {
+    padding: 30px 0 90px;
+  }
+
+  .section-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .chap-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(20, 33, 61, 0.04);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+
+  .chap-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 16px 36px rgba(37, 99, 235, 0.12);
+  }
+
+  .chap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .chap-badge {
+    font-size: 11px;
+    font-weight: 850;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .q-count {
+    font-size: 12px;
+    font-weight: 750;
+    color: #d97706;
+    background: #fff7d8;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .chap-card h3 {
+    font-size: 20px;
+    font-weight: 850;
+    color: #14213d;
+    margin: 0 0 10px;
+    line-height: 1.3;
+  }
+
+  .chap-desc {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0 0 20px;
+  }
+
+  .chap-link {
+    font-size: 14px;
+    font-weight: 850;
+    color: #2563eb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 50px 0 25px;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .footer-brand div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    width: min(1180px, calc(100% - 40px));
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #64748b;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    .chapters-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .chapters-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

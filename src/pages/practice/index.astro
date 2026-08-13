@@ -1,0 +1,449 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout
+  title="Practice Questions | Class 9 & Class 10 Mathematics | The Concepts Adda"
+  description="Select your class to solve chapter-wise practice questions with step-by-step solutions for Class 9 and Class 10 Mathematics."
+>
+  <main class="practice-main">
+
+    <!-- NAVBAR -->
+    <header class="practice-navbar">
+      <div class="nav-container">
+        <a href="/" class="brand">
+          <img src="/logo.png" alt="The Concepts Adda" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">The Concepts Adda</div>
+            <div class="brand-tagline">Understand. Practice. Master.</div>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/classes">Classes</a>
+          <a href="/practice" class="active">Practice</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="practice-hero">
+      <div class="hero-container text-center">
+        <div class="breadcrumb">
+          <a href="/">← Home</a>
+          <span class="breadcrumb-dot"></span>
+          <span>PRACTICE QUESTIONS</span>
+        </div>
+
+        <h1>
+          Choose Your Class <br />
+          <span class="blue-text">To Start Practicing</span>
+        </h1>
+        <p class="hero-desc">
+          Select your class below to access chapter-wise practice sets with 20 curated NCERT & Board Exam questions per chapter.
+        </p>
+      </div>
+    </section>
+
+    <!-- CLASS SELECTION CARDS -->
+    <section class="class-selection-section">
+      <div class="section-container">
+        <div class="class-grid">
+
+          <!-- CLASS 9 CARD -->
+          <a href="/practice/class-9" class="class-card class-9-card">
+            <div class="card-top">
+              <div class="class-number">09</div>
+              <div class="class-badge">CLASS 09</div>
+            </div>
+            <div class="card-content">
+              <h2>Class 9 Mathematics</h2>
+              <p>
+                Practice chapter-wise sets for Number Systems, Polynomials, Lines & Angles, Triangles, Heron's Formula, and more.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">📚 12 Chapters</span>
+                <span class="meta-item">✍️ 240+ Questions</span>
+              </div>
+              <div class="card-btn">
+                Select Class 9 →
+              </div>
+            </div>
+          </a>
+
+          <!-- CLASS 10 CARD -->
+          <a href="/practice/class-10" class="class-card class-10-card">
+            <div class="card-top">
+              <div class="class-number">10</div>
+              <div class="class-badge gold-badge">CLASS 10</div>
+            </div>
+            <div class="card-content">
+              <h2>Class 10 Mathematics</h2>
+              <p>
+                Master Real Numbers, Polynomials, Quadratic Equations, Trigonometry, Statistics, Probability, and official Board PYQs.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">📚 14 Chapters</span>
+                <span class="meta-item">✍️ 280+ Questions</span>
+              </div>
+              <div class="card-btn gold-btn">
+                Select Class 10 →
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="The Concepts Adda" />
+        <div>
+          <strong>The Concepts Adda</strong>
+          <span>Understand. Practice. Master.</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/classes">Classes</a>
+        <a href="/practice">Practice</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © {new Date().getFullYear()} The Concepts Adda. All rights reserved.
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f8fafc;
+    color: #14213d;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+  }
+
+  .practice-main {
+    min-height: 80vh;
+  }
+
+  /* NAVBAR */
+  .practice-navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .nav-container {
+    width: min(1180px, calc(100% - 40px));
+    height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .brand-name {
+    font-size: 18px;
+    font-weight: 850;
+  }
+
+  .brand-tagline {
+    font-size: 11px;
+    color: #64748b;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #2563eb;
+  }
+
+  /* HERO */
+  .practice-hero {
+    padding: 70px 0 40px;
+    background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08), transparent 50%);
+  }
+
+  .hero-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 750;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #cbd5e1;
+  }
+
+  .practice-hero h1 {
+    font-size: clamp(38px, 4.5vw, 56px);
+    font-weight: 850;
+    line-height: 1.1;
+    margin: 0;
+    color: #14213d;
+  }
+
+  .blue-text {
+    color: #2563eb;
+  }
+
+  .hero-desc {
+    max-width: 620px;
+    margin: 18px auto 0;
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  /* CLASS CARDS SECTION */
+  .class-selection-section {
+    padding: 30px 0 90px;
+  }
+
+  .section-container {
+    width: min(1000px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .class-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .class-card {
+    text-decoration: none;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .class-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .class-9-card {
+    background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+  }
+
+  .class-10-card {
+    background: linear-gradient(145deg, #0b1329 0%, #172554 100%);
+    border: 1px solid rgba(244, 196, 48, 0.25);
+    color: #ffffff;
+    box-shadow: 0 18px 40px rgba(11, 19, 41, 0.3);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .class-number {
+    font-size: 48px;
+    font-weight: 900;
+    color: #38bdf8;
+  }
+
+  .class-10-card .class-number {
+    color: #f4c430;
+  }
+
+  .class-badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: 1px;
+  }
+
+  .gold-badge {
+    background: rgba(244, 196, 48, 0.15);
+    color: #f4c430;
+    border-color: rgba(244, 196, 48, 0.3);
+  }
+
+  .card-content h2 {
+    font-size: 26px;
+    font-weight: 850;
+    margin: 16px 0 10px;
+    color: #ffffff;
+  }
+
+  .card-content p {
+    font-size: 15px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0 0 20px;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .meta-item {
+    font-size: 13px;
+    font-weight: 700;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  .card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: 850;
+    transition: background 0.2s ease;
+  }
+
+  .gold-btn {
+    background: #f4c430;
+    color: #0f172a;
+  }
+
+  .class-card:hover .card-btn {
+    filter: brightness(1.1);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 50px 0 25px;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .footer-brand div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+
+  .footer-bottom {
+    width: min(1180px, calc(100% - 40px));
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #64748b;
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .class-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

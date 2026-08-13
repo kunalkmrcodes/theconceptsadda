@@ -1,0 +1,661 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { class10Practice } from "../../../data/practiceClass10.js";
+import "../../../styles/global.css";
+
+export function getStaticPaths() {
+  return class10Practice.map((chap) => ({
+    params: { chapter: chap.id },
+    props: { chapterData: chap },
+  }));
+}
+
+const { chapterData } = Astro.props;
+---
+
+<Layout
+  title={`${chapterData.title} Practice Questions | Class 10 | The Concepts Adda`}
+  description={`Solve 20 NCERT and CBSE Board exam practice questions with step-by-step solutions for Class 10 ${chapterData.title}.`}
+>
+  <main class="chapter-questions-page">
+
+    <!-- NAVBAR -->
+    <header class="practice-navbar">
+      <div class="nav-container">
+        <a href="/" class="brand">
+          <img src="/logo.png" alt="The Concepts Adda" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">The Concepts Adda</div>
+            <div class="brand-tagline">Understand. Practice. Master.</div>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/practice">Practice</a>
+          <a href="/practice/class-10">Class 10 Chapters</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HEADER / HERO -->
+    <section class="chapter-hero">
+      <div class="hero-container">
+        <div class="breadcrumb">
+          <a href="/practice">Practice</a>
+          <span class="breadcrumb-dot"></span>
+          <a href="/practice/class-10">Class 10</a>
+          <span class="breadcrumb-dot"></span>
+          <span class="active-crumb">Chapter {chapterData.chapterNumber}: {chapterData.title}</span>
+        </div>
+
+        <div class="hero-header-row">
+          <div>
+            <div class="chapter-badge">CLASS 10 · CHAPTER {chapterData.chapterNumber}</div>
+            <h1>
+              {chapterData.title} <br />
+              <span class="blue-text">Practice Questions</span>
+            </h1>
+            <p class="hero-desc">
+              20 curated NCERT & Board Exam questions to test your understanding. Click on "Show Solution & Answer" to check step-by-step working.
+            </p>
+          </div>
+          <div class="total-badge">
+            <strong>20</strong>
+            <span>Questions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="questions-section">
+      <div class="section-container">
+
+        <!-- FILTER BAR -->
+        <div class="filter-bar">
+          <div class="filter-group">
+            <span class="filter-label">Filter:</span>
+            <button class="filter-btn active" data-filter="all">All (20)</button>
+            <button class="filter-btn" data-filter="MCQ">MCQs</button>
+            <button class="filter-btn" data-filter="Short Answer">Short Answer</button>
+            <button class="filter-btn" data-filter="Long Answer">Long Answer</button>
+            <button class="filter-btn" data-filter="PYQ">Board PYQs</button>
+          </div>
+          <a href="/practice/class-10" class="back-chap-btn">
+            ← All Class 10 Chapters
+          </a>
+        </div>
+
+        <!-- QUESTIONS LIST -->
+        <div class="questions-list" id="questionsList">
+          {chapterData.questions.map((q) => (
+            <div class="q-card" data-type={q.type} data-id={q.id}>
+              <div class="q-header">
+                <div class="q-meta">
+                  <span class="q-number">Q{q.number}</span>
+                  <span class="q-type-badge">{q.type}</span>
+                  <span class="q-marks-badge">{q.marks} {q.marks === 1 ? 'Mark' : 'Marks'}</span>
+                </div>
+              </div>
+
+              <div class="q-body">
+                <h3 class="q-text">{q.question}</h3>
+
+                {q.options && q.options.length > 0 && (
+                  <div class="options-grid">
+                    {q.options.map((opt) => (
+                      <div class="option-item">{opt}</div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div class="q-footer">
+                <button class="toggle-sol-btn" data-target={`sol-${q.id}`}>
+                  <span class="btn-icon">💡</span>
+                  <span class="btn-label">Show Solution & Answer</span>
+                </button>
+              </div>
+
+              <div class="solution-box hidden" id={`sol-${q.id}`}>
+                <div class="sol-inner">
+                  <div class="ans-line">
+                    <strong>Correct Answer:</strong> <span>{q.answer}</span>
+                  </div>
+                  <div class="sol-content">
+                    <strong>Step-by-step Solution:</strong>
+                    <pre class="sol-text">{q.solution}</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="The Concepts Adda" />
+        <div>
+          <strong>The Concepts Adda</strong>
+          <span>Understand. Practice. Master.</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/practice">Practice</a>
+        <a href="/practice/class-10">Class 10 Practice</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © {new Date().getFullYear()} The Concepts Adda. All rights reserved.
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  function initPage() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const qCards = document.querySelectorAll('.q-card');
+    const toggleBtns = document.querySelectorAll('.toggle-sol-btn');
+
+    // Filter functionality
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filterVal = btn.getAttribute('data-filter');
+
+        qCards.forEach(card => {
+          const type = card.getAttribute('data-type');
+          if (filterVal === 'all' || type === filterVal) {
+            (card as HTMLElement).style.display = 'block';
+          } else {
+            (card as HTMLElement).style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Solution Toggle functionality
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const solBox = document.getElementById(targetId!);
+        if (solBox) {
+          const isHidden = solBox.classList.contains('hidden');
+          if (isHidden) {
+            solBox.classList.remove('hidden');
+            btn.classList.add('active');
+            const label = btn.querySelector('.btn-label');
+            if (label) label.textContent = 'Hide Solution & Answer';
+          } else {
+            solBox.classList.add('hidden');
+            btn.classList.remove('active');
+            const label = btn.querySelector('.btn-label');
+            if (label) label.textContent = 'Show Solution & Answer';
+          }
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPage);
+  } else {
+    initPage();
+  }
+</script>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f8fafc;
+    color: #14213d;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+  }
+
+  .chapter-questions-page {
+    min-height: 80vh;
+  }
+
+  .practice-navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .nav-container {
+    width: min(1180px, calc(100% - 40px));
+    height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .brand-name {
+    font-size: 18px;
+    font-weight: 850;
+  }
+
+  .brand-tagline {
+    font-size: 11px;
+    color: #64748b;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .chapter-hero {
+    padding: 55px 0 35px;
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .hero-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 750;
+    color: #64748b;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #cbd5e1;
+  }
+
+  .active-crumb {
+    color: #1e293b;
+  }
+
+  .hero-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+  }
+
+  .chapter-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+  }
+
+  .chapter-hero h1 {
+    font-size: clamp(34px, 4vw, 48px);
+    font-weight: 850;
+    line-height: 1.1;
+    margin: 0;
+    color: #14213d;
+  }
+
+  .blue-text {
+    color: #2563eb;
+  }
+
+  .hero-desc {
+    max-width: 680px;
+    margin: 14px 0 0;
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .total-badge {
+    background: #14213d;
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(20, 33, 61, 0.15);
+    flex-shrink: 0;
+  }
+
+  .total-badge strong {
+    font-size: 32px;
+    color: #f4c430;
+    line-height: 1;
+  }
+
+  .total-badge span {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 4px;
+  }
+
+  /* QUESTIONS SECTION */
+  .questions-section {
+    padding: 40px 0 90px;
+  }
+
+  .section-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-size: 13px;
+    font-weight: 750;
+    color: #64748b;
+  }
+
+  .filter-btn {
+    padding: 7px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .filter-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+
+  .filter-btn.active {
+    background: #14213d;
+    color: #ffffff;
+    border-color: #14213d;
+  }
+
+  .back-chap-btn {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 750;
+  }
+
+  .questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .q-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(20, 33, 61, 0.04);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .q-card:hover {
+    box-shadow: 0 12px 32px rgba(20, 33, 61, 0.08);
+  }
+
+  .q-header {
+    margin-bottom: 16px;
+  }
+
+  .q-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .q-number {
+    font-size: 14px;
+    font-weight: 900;
+    color: #14213d;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .q-type-badge {
+    font-size: 11px;
+    font-weight: 850;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #eef4ff;
+    color: #2563eb;
+  }
+
+  .q-marks-badge {
+    font-size: 11px;
+    font-weight: 850;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #fff7d8;
+    color: #9a7400;
+  }
+
+  .q-text {
+    font-size: 18px;
+    font-weight: 750;
+    color: #1e293b;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .option-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+  }
+
+  .q-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .toggle-sol-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid #2563eb;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .toggle-sol-btn:hover,
+  .toggle-sol-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+  }
+
+  .solution-box {
+    margin-top: 16px;
+    border-radius: 14px;
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 20px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .solution-box.hidden {
+    display: none;
+  }
+
+  .ans-line {
+    font-size: 15px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ans-line strong {
+    color: #f4c430;
+  }
+
+  .sol-content strong {
+    font-size: 13px;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .sol-text {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 50px 0 25px;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #f4c430;
+  }
+
+  .footer-brand div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    width: min(1180px, calc(100% - 40px));
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #64748b;
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .hero-header-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
